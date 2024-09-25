@@ -12,7 +12,7 @@
             document.myform.submit();
         }
         function validateForm() {
-            let userId = document.forms["loginForm"]["user_id"].value;
+            let userId = document.forms["loginForm"]["email"].value;
             let password = document.forms["loginForm"]["password"].value;
             if (userId == "" || password == "") {
                 document.getElementById("error").innerText = "ユーザーIDとパスワードを入力してください";
@@ -24,10 +24,10 @@
 </head>
 <body>
     <h2>ログイン</h2>
-	<form name="myform" action="/24AkiC/Login" method="post">
+	<form name="myform" action="<%= request.getContextPath() %>/LoginServlet" method="post">
 	    <div>
-	        <label for="user_id">ユーザーID:</label>
-	        <input type="text" id="user_id" name="user_id">
+	        <label for="email">ユーザーID:</label>
+	        <input type="text" id="email" name="email">
 	    </div>
 	    <div>
 	        <label for="password">パスワード:</label>

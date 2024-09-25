@@ -32,14 +32,14 @@
 	    <url-pattern>/LoginPage</url-pattern>
 	</servlet-mapping>
     <!-- エラーページの設定 -->
-    <error-page>
+    <!-- <error-page>
         <error-code>404</error-code>
         <location>/WEB-INF/JSP/ErrorPage.jsp</location>
     </error-page>
     <error-page>
         <exception-type>java.lang.Throwable</exception-type>
         <location>/WEB-INF/JSP/ErrorPage.jsp</location>
-    </error-page>
+    </error-page> -->
 
     <!-- LoginFilter mapping (ログイン状態をチェックするフィルター) -->
     <!-- <filter>

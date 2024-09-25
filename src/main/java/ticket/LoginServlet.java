@@ -16,20 +16,23 @@ public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String userId = request.getParameter("user_id");
+        String email = request.getParameter("email");
         String password = request.getParameter("password");
 
         UsersBean user = null;
         LoginDAO loginDAO = new LoginDAO();
 
         try {
-            user = loginDAO.authenticate(userId, password);
+            user = loginDAO.authenticate(email, password);
         } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace(); // エラーのスタックトレースをコンソールに出力
+            e.printStackTrace(); // コンソールに出力
+            // エラーをログに記録
+            log("Database error occurred", e);
             request.setAttribute("errorMessage", "システムエラーが発生しました。管理者に連絡してください。");
             request.getRequestDispatcher("/WEB-INF/JSP/ErrorPage.jsp").forward(request, response);
             return;
         }
+
 
         if (user != null) {
             HttpSession session = request.getSession();

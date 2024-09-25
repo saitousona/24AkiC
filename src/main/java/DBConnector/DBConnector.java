@@ -7,13 +7,14 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
+
 public class DBConnector {
     private static String url;
     private static String user;
     private static String pass;
 
     static {
-        try (InputStream input = DBConnector.class.getClassLoader().getResourceAsStream("db.properties")) {
+        try (InputStream input = DBConnector.class.getClassLoader().getResourceAsStream("resources/db.properties")) {
             if (input == null) {
                 throw new RuntimeException("db.properties がクラスパスに存在しません。");
             }

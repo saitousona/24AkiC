@@ -9,7 +9,7 @@ import DBConnector.DBConnector;
 import bean.UsersBean;
 
 public class LoginDAO {
-    public UsersBean authenticate(String userId, String password) throws SQLException, ClassNotFoundException {
+    public UsersBean authenticate(String email, String password) throws SQLException, ClassNotFoundException {
         UsersBean user = null;
         Connection connection = null;
         PreparedStatement pstmt = null;
@@ -20,9 +20,9 @@ public class LoginDAO {
             connection = DBConnector.getConnection();
 
             // SQLクエリでユーザー情報を検索
-            String sql = "SELECT * FROM users WHERE user_id = ? AND password = ?";
+            String sql = "SELECT * FROM users WHERE email = ? AND password = ?";
             pstmt = connection.prepareStatement(sql);
-            pstmt.setString(1, userId);
+            pstmt.setString(1, email);
             pstmt.setString(2, password);
 
             rs = pstmt.executeQuery();
@@ -30,7 +30,7 @@ public class LoginDAO {
             // ユーザーが存在する場合、UserBeanに情報をセット
             if (rs.next()) {
                 user = new UsersBean();
-                user.setUserId(rs.getString("user_id"));
+                user.setEmail(rs.getString("email"));
                 user.setUserName(rs.getString("user_name"));
             }
         } catch (SQLException | ClassNotFoundException e) {
