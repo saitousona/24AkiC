@@ -1,0 +1,246 @@
+
+SQL*Plus: Release 19.0.0.0.0 - Production on 水 9月 25 09:46:33 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+最終正常ログイン時間: 水 9月  25 2024 09:39:42 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+に接続されました。
+
+表が削除されました。
+
+
+順序が削除されました。
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0との接続が切断されました。
+
+SQL*Plus: Release 19.0.0.0.0 - Production on 水 9月 25 09:46:35 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+最終正常ログイン時間: 水 9月  25 2024 09:46:34 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+に接続されました。
+
+表が削除されました。
+
+drop sequence users_Sequence
+              *
+行1でエラーが発生しました。:
+ORA-02289: 順序が存在しません。
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0との接続が切断されました。
+
+SQL*Plus: Release 19.0.0.0.0 - Production on 水 9月 25 09:48:31 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+最終正常ログイン時間: 水 9月  25 2024 09:46:35 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+に接続されました。
+
+表が作成されました。
+
+
+コミットが完了しました。
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0との接続が切断されました。
+
+SQL*Plus: Release 19.0.0.0.0 - Production on 水 9月 25 09:48:32 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+最終正常ログイン時間: 水 9月  25 2024 09:48:31 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+に接続されました。
+
+順序が作成されました。
+
+
+表が作成されました。
+
+
+コミットが完了しました。
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0との接続が切断されました。
+
+SQL*Plus: Release 19.0.0.0.0 - Production on 水 9月 25 09:48:46 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+最終正常ログイン時間: 水 9月  25 2024 09:48:33 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+に接続されました。
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser2@hoge.jp', 'Error User1', 'password123', NULL, 'テスト')
+*
+行1でエラーが発生しました。:
+ORA-02290: チェック制約(INFO.CK_USER_PASSWORD)に違反しました
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser3@hoge.jp', 'Error User2', 'AAAAaaaa1111!', NULL, 'テスト')
+*
+行1でエラーが発生しました。:
+ORA-02290: チェック制約(INFO.CK_USER_PASSWORD)に違反しました
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser4@hoge.jp', 'Error User3', 'Short1!', NULL, 'テスト')
+*
+行1でエラーが発生しました。:
+ORA-02290: チェック制約(INFO.CK_USER_PASSWORD)に違反しました
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer5@hoge.jp', 'Error User4', '12345678', NULL, 'テスト')
+*
+行1でエラーが発生しました。:
+ORA-02290: チェック制約(INFO.CK_USER_PASSWORD)に違反しました
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('', 'Error User5', 'ErrorUser123!', NULL, 'テスト')
+                                                                                  *
+行1でエラーが発生しました。:
+ORA-01400: ("INFO"."USERS"."EMAIL")にはNULLは挿入できません。
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer6@hoge.jp', '', 'ErrorUser123!', NULL, 'テスト')
+                                                                                                      *
+行1でエラーが発生しました。:
+ORA-01400: ("INFO"."USERS"."USER_NAME")にはNULLは挿入できません。
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser7@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+行1でエラーが発生しました。:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")にはNULLは挿入できません。
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser1@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+行1でエラーが発生しました。:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")にはNULLは挿入できません。
+
+
+
+コミットが完了しました。
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0との接続が切断されました。
+
+SQL*Plus: Release 19.0.0.0.0 - Production on 水 9月 25 09:48:47 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+最終正常ログイン時間: 水 9月  25 2024 09:48:46 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+に接続されました。
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+
+1行が作成されました。
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (null, 'ichiroutanaka@hoge.jp', 'ゴミ出し', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ママ', '低', 0, '家事')
+                                                                                                                *
+行1でエラーが発生しました。:
+ORA-01400: ("INFO"."TICKET"."TICKET_ID")にはNULLは挿入できません。
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (11, 'NULL', 'ゴミ出し', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ママ', '低', 0, '家事')
+*
+行1でエラーが発生しました。:
+ORA-02291: 整合性制約(INFO.FK_TICKET_USER)に違反しました - 親キーがありません
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (12, 'ss23304007@ga.ttc.ac.jp', 'プロジェクトの提案書の作成（担当者再アサインの可能性あります）', TO_DATE('2025-02-02', 'YYYY-MM-DD'), '田中', '高', 0, '顧客調査')
+                                                                                                                                               *
+行1でエラーが発生しました。:
+ORA-12899: 列"INFO"."TICKET"."TITLE"の値が大きすぎます(実際: 62、最大: 60)
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (13, 'ss23304007@ga.ttc.ac.jp', 'ゴミ出し', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ママ', 'LOW', 0, '家事')
+                                                                                                                                                                                                        *
+行1でエラーが発生しました。:
+ORA-12899: 列"INFO"."TICKET"."IMPORTANCE"の値が大きすぎます(実際: 3、最大: 2)
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (14, 'ss23304007@ga.ttc.ac.jp', 'ゴミ出し', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ママ', '低', NULL, '家事')
+                                                                                                                                                                                                              *
+行1でエラーが発生しました。:
+ORA-01400: ("INFO"."TICKET"."PROGRESS")にはNULLは挿入できません。
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (1, 'ss23304007@ga.ttc.ac.jp', 'ゴミ出し', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ママ', '低', 0, '家事')
+*
+行1でエラーが発生しました。:
+ORA-00001: 一意制約(INFO.SYS_C008324)に反しています
+
+
+
+コミットが完了しました。
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0との接続が切断されました。
