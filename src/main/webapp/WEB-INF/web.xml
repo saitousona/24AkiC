@@ -1,12 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
 
-	<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4" id="WebApp_ID">
-		<display-name>24AkiC</display-name>
-		<welcome-file-list>
-			<welcome-file>index.html</welcome-file>
-			<welcome-file>index.htm</welcome-file>
-			<welcome-file>index.jsp</welcome-file>
-			<welcome-file>default.html</welcome-file>
-			<welcome-file>default.htm</welcome-file>
-			<welcome-file>default.jsp</welcome-file>
-		</welcome-file-list>
-	</web-app>
+    <!-- Welcome file (optional) -->
+	<welcome-file-list>
+	    <welcome-file>HTML/TopPage.html</welcome-file>
+	</welcome-file-list>
+
+
+    <!-- LoginServlet mapping -->
+	<servlet>
+	    <servlet-name>LoginServlet</servlet-name>
+	    <servlet-class>ticket.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>LoginServlet</servlet-name>
+	    <url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- LoginPage.jsp mapping -->
+	<servlet>
+	    <servlet-name>loginpage</servlet-name>
+	    <jsp-file>/WEB-INF/JSP/LoginPage.jsp</jsp-file>
+	    <!-- TopPage→Servlet→LoginPageのロジックができたら/WEB-IF/JSPを追記 -->
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>loginpage</servlet-name>
+	    <url-pattern>/LoginPage</url-pattern>
+	</servlet-mapping>
+    <!-- エラーページの設定 -->
+    <!-- <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/JSP/ErrorPage.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/WEB-INF/JSP/ErrorPage.jsp</location>
+    </error-page> -->
+
+    <!-- LoginFilter mapping (ログイン状態をチェックするフィルター) -->
+    <!-- <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/24AkiC/*</url-pattern>
+    </filter-mapping> -->
+    
+	<servlet>
+	    <servlet-name>TopPageServlet</servlet-name>
+	    <servlet-class>ticket.TopPageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>TopPageServlet</servlet-name>
+	    <url-pattern>/TopPageServlet</url-pattern>
+	</servlet-mapping>    
+   
+
+</web-app>
