@@ -4,6 +4,7 @@
 <html>
 <head>
     <title>ログイン</title>
+    <link rel="stylesheet" href="CSS/style.css">
    <script>
         function buttonclick() {
             // アクションURLを設定
@@ -23,6 +24,10 @@
     </script>
 </head>
 <body>
+	<!-- 背景要素 -->
+	<div class="bg_pattern Polka_v2"></div> 
+	<div class="container">
+
     <h2>ログイン</h2>
 	<form name="myform" action="<%= request.getContextPath() %>/LoginServlet" method="post">
 	    <div>
@@ -41,6 +46,11 @@
         <% if (request.getAttribute("errorMessage") != null) { %>
             <%= request.getAttribute("errorMessage") %>
         <% } %>
+        
+        <a href="ResetPasswordPage.html" class="button">パスワードリセット</a>
+        
+        <a href="CreateUserPage.html" class="button">ユーザー作成</a>
     </div>
+    
 </body>
 </html>
