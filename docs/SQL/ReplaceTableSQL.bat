@@ -1,7 +1,9 @@
 @echo off
+chcp 65001
 
-set /p DB_USER=ユーザー名を入力してください: 
-set /p DB_PASSWORD=パスワードを入力してください: 
+set NLS_LANG=JAPANESE_JAPAN.UTF8
+set /p DB_USER=繝ｦ繝ｼ繧ｶ繝ｼ蜷阪ｒ蜈･蜉帙＠縺ｦ縺上□縺輔＞: 
+set /p DB_PASSWORD=繝代せ繝ｯ繝ｼ繝峨ｒ蜈･蜉帙＠縺ｦ縺上□縺輔＞: 
 
 set DB_CONNECT=localhost:1521/orcl
 
