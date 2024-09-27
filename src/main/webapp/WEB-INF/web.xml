@@ -59,6 +59,40 @@
 	    <servlet-name>TopPageServlet</servlet-name>
 	    <url-pattern>/TopPageServlet</url-pattern>
 	</servlet-mapping>    
-   
+	
+	<servlet>
+		<servlet-name>MainToDoServlet</servlet-name>
+		<servlet-class>ticket.MainToDoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MainToDoServlet</servlet-name>
+		<url-pattern>/MainToDoServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>GetTicketDetailServlet</servlet-name>
+        <servlet-class>ticket.GetTicketDetailServlet</servlet-class>
+    </servlet>
 
+    <servlet-mapping>
+        <servlet-name>GetTicketDetailServlet</servlet-name>
+        <url-pattern>/GetTicketDetailServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>CreateTicketServlet</servlet-name>
+    	<servlet-class>ticket.CreateTicketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>CreateTicketServlet</servlet-name>
+    	<url-pattern>/CreateTicketServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>FixOrCreateTicketServlet</servlet-name>
+    	<servlet-class>ticket.FixOrCreateTicketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>FixOrCreateTicketServlet</servlet-name>
+    	<url-pattern>/FixOrCreateTicketServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

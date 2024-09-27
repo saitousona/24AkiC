@@ -244,3 +244,1246 @@ ORA-00001: ˆêˆÓ§–ñ(INFO.SYS_C008324)‚É”½‚µ‚Ä‚¢‚Ü‚·
 
 Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
 Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:05:10 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 09:36:01 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+•\‚ªíœ‚³‚ê‚Ü‚µ‚½B
+
+
+‡˜‚ªíœ‚³‚ê‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:05:12 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:05:11 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+•\‚ªíœ‚³‚ê‚Ü‚µ‚½B
+
+drop sequence users_Sequence
+              *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02289: ‡˜‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:05:34 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:05:13 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+•\‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:05:35 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:05:34 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+‡˜‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+•\‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:05:48 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:05:35 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser2@hoge.jp', 'Error User1', 'password123', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser3@hoge.jp', 'Error User2', 'AAAAaaaa1111!', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser4@hoge.jp', 'Error User3', 'Short1!', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer5@hoge.jp', 'Error User4', '12345678', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('', 'Error User5', 'ErrorUser123!', NULL, 'ƒeƒXƒg')
+                                                                                  *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."EMAIL")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer6@hoge.jp', '', 'ErrorUser123!', NULL, 'ƒeƒXƒg')
+                                                                                                      *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."USER_NAME")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser7@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser1@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:05:50 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:05:48 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (null, 'ichiroutanaka@hoge.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', 0, '‰Æ–')
+                                                                                                                *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."TICKET"."TICKET_ID")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (11, 'NULL', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', 0, '‰Æ–')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02291: ®‡«§–ñ(INFO.FK_TICKET_USER)‚Éˆá”½‚µ‚Ü‚µ‚½ - eƒL[‚ª‚ ‚è‚Ü‚¹‚ñ
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (12, 'ss23304007@ga.ttc.ac.jp', 'ƒvƒƒWƒFƒNƒg‚Ì’ñˆÄ‘‚Ìì¬i’S“–ÒÄƒAƒTƒCƒ“‚Ì‰Â”\«‚ ‚è‚Ü‚·j', TO_DATE('2025-02-02', 'YYYY-MM-DD'), '“c’†', '‚', 0, 'ŒÚ‹q’²¸')
+                                                                                                                                               *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-12899: —ñ"INFO"."TICKET"."TITLE"‚Ì’l‚ª‘å‚«‚·‚¬‚Ü‚·(ÀÛ: 62AÅ‘å: 60)
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (13, 'ss23304007@ga.ttc.ac.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', 'LOW', 0, '‰Æ–')
+                                                                                                                                                                                                        *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-12899: —ñ"INFO"."TICKET"."IMPORTANCE"‚Ì’l‚ª‘å‚«‚·‚¬‚Ü‚·(ÀÛ: 3AÅ‘å: 2)
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (14, 'ss23304007@ga.ttc.ac.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', NULL, '‰Æ–')
+                                                                                                                                                                                                              *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."TICKET"."PROGRESS")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (1, 'ss23304007@ga.ttc.ac.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', 0, '‰Æ–')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00001: ˆêˆÓ§–ñ(INFO.SYS_C008348)‚É”½‚µ‚Ä‚¢‚Ü‚·
+
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:11:19 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:08:11 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+•\‚ªíœ‚³‚ê‚Ü‚µ‚½B
+
+
+‡˜‚ªíœ‚³‚ê‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:11:20 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:11:19 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+•\‚ªíœ‚³‚ê‚Ü‚µ‚½B
+
+drop sequence users_Sequence
+              *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02289: ‡˜‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:11:38 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:11:21 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+•\‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:11:39 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:11:38 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+‡˜‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+    importance VARCHAR2(10) NOT NULL CONSTRAINT CK_TICKET_IMPORTANCE CHECK (importance IN ('ä½', 'ä¸­', 'é«˜')),
+                                                                                                  *
+s7‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00907: ‰EƒJƒbƒR‚ª‚ ‚è‚Ü‚¹‚ñB
+
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:11:45 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:11:39 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser2@hoge.jp', 'Error User1', 'password123', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser3@hoge.jp', 'Error User2', 'AAAAaaaa1111!', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser4@hoge.jp', 'Error User3', 'Short1!', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer5@hoge.jp', 'Error User4', '12345678', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('', 'Error User5', 'ErrorUser123!', NULL, 'ƒeƒXƒg')
+                                                                                  *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."EMAIL")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer6@hoge.jp', '', 'ErrorUser123!', NULL, 'ƒeƒXƒg')
+                                                                                                      *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."USER_NAME")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser7@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser1@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:11:46 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:11:45 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'ss23304007@ga.ttc.ac.jp', '‹c‘è‚Ìƒ`ƒFƒbƒNƒŠƒXƒgì¬', TO_DATE('2024-09-10', 'YYYY-MM-DD'), 'âV“¡', '’á', 100, '•¶Íì¬')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'ss23304007@ga.ttc.ac.jp', 'ƒ~[ƒeƒBƒ“ƒO‚Ì‹c‘è®—', TO_DATE('2024-11-02', 'YYYY-MM-DD'), '“c‹v•Û', '’†', 50, '‰ï‹c€”õ')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'ss23304007@ga.ttc.ac.jp', 'ƒvƒƒWƒFƒNƒg‚Ì’ñˆÄ‘‚Ìì¬i’S“–ÒÄƒAƒTƒCƒ“‚Ì‰Â”\«‚ ‚èBj', TO_DATE('2025-02-02', 'YYYY-MM-DD'), '“c’†', '‚', 0, 'ŒÚ‹q’²¸')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'ss23304007@ga.ttc.ac.jp', 'TŸ‹Æ–±', TO_DATE('2024-11-08', 'YYYY-MM-DD'), '“c‹v•Û', '’†', 0, '’è—á‹Æ–±')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'ss23304007@ga.ttc.ac.jp', 'TŸ’è—á‰ï‹c', TO_DATE('2024-11-08', 'YYYY-MM-DD'), 'ƒƒ“ƒo', '’†', 0, '‰ï‹c')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'mt23304012@ga.ttc.ac.jp', 'TŸ’è—á‰ï‹c', TO_DATE('2024-11-08', 'YYYY-MM-DD'), 'ƒƒ“ƒo', '’†', 0, '‰ï‹c')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'mt23304012@ga.ttc.ac.jp', 'Unit Test', TO_DATE('2024-11-09', 'YYYY-MM-DD'), 'âV“¡', '‚', 0, 'ƒeƒXƒg')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'mt23304012@ga.ttc.ac.jp', 'ƒVƒXƒeƒ€’²¸', TO_DATE('2026-10-02', 'YYYY-MM-DD'), NULL, '’á', 0, NULL)
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'ichiroutanaka@hoge.jp', '—[”Ñ‚Ì‚¨‚Â‚©‚¢', TO_DATE('2024-10-02', 'YYYY-MM-DD'), 'ƒpƒp', '’á', 50, NULL)
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'ichiroutanaka@hoge.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', 0, '‰Æ–')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (null, 'ichiroutanaka@hoge.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', 0, '‰Æ–')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (11, 'NULL', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', 0, '‰Æ–')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (12, 'ss23304007@ga.ttc.ac.jp', 'ƒvƒƒWƒFƒNƒg‚Ì’ñˆÄ‘‚Ìì¬i’S“–ÒÄƒAƒTƒCƒ“‚Ì‰Â”\«‚ ‚è‚Ü‚·j', TO_DATE('2025-02-02', 'YYYY-MM-DD'), '“c’†', '‚', 0, 'ŒÚ‹q’²¸')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (13, 'ss23304007@ga.ttc.ac.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', 'LOW', 0, '‰Æ–')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (14, 'ss23304007@ga.ttc.ac.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', NULL, '‰Æ–')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (1, 'ss23304007@ga.ttc.ac.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', 0, '‰Æ–')
+            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00942: •\‚Ü‚½‚Íƒrƒ…[‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:14:06 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:13:15 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+CREATE TABLE USERS (
+             *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00955: ‚·‚Å‚Ég—p‚³‚ê‚Ä‚¢‚éƒIƒuƒWƒFƒNƒg–¼‚Å‚·B
+
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:14:08 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:14:06 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+CREATE SEQUENCE TICKET_Sequence
+                *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00955: ‚·‚Å‚Ég—p‚³‚ê‚Ä‚¢‚éƒIƒuƒWƒFƒNƒg–¼‚Å‚·B
+
+
+
+•\‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:14:14 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:14:08 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('ss23304007@ga.ttc.ac.jp', 'âV“¡ ‘nŒÈ', 'Abc12345&!', 'NewAbc123!', 'v‚¢o')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00001: ˆêˆÓ§–ñ(INFO.SYS_C008354)‚É”½‚µ‚Ä‚¢‚Ü‚·
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('mt23304012@ga.ttc.ac.jp', '“c‹v•Û ‰ë–ç', 'Xy7890&@', 'Xy8901@&', '–¢—ˆ‚Ì–²')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00001: ˆêˆÓ§–ñ(INFO.SYS_C008354)‚É”½‚µ‚Ä‚¢‚Ü‚·
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('ichiroutanaka@hoge.jp', '“c’† ˆê˜Y', 'StrongP@ssw0rd1', 'WeakP@ssw0rd1', '‰Æ‘°')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00001: ˆêˆÓ§–ñ(INFO.SYS_C008354)‚É”½‚µ‚Ä‚¢‚Ü‚·
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser1@hoge.jp', 'Test User', 'TestUser123!', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00001: ˆêˆÓ§–ñ(INFO.SYS_C008354)‚É”½‚µ‚Ä‚¢‚Ü‚·
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser2@hoge.jp', 'Error User1', 'password123', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser3@hoge.jp', 'Error User2', 'AAAAaaaa1111!', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser4@hoge.jp', 'Error User3', 'Short1!', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer5@hoge.jp', 'Error User4', '12345678', NULL, 'ƒeƒXƒg')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_USER_PASSWORD)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('', 'Error User5', 'ErrorUser123!', NULL, 'ƒeƒXƒg')
+                                                                                  *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."EMAIL")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer6@hoge.jp', '', 'ErrorUser123!', NULL, 'ƒeƒXƒg')
+                                                                                                      *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."USER_NAME")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser7@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser1@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:14:15 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:14:14 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (null, 'ichiroutanaka@hoge.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', 0, '‰Æ–')
+                                                                                                                *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."TICKET"."TICKET_ID")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (11, 'NULL', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', 0, '‰Æ–')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02291: ®‡«§–ñ(INFO.FK_TICKET_USER)‚Éˆá”½‚µ‚Ü‚µ‚½ - eƒL[‚ª‚ ‚è‚Ü‚¹‚ñ
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (12, 'ss23304007@ga.ttc.ac.jp', 'ƒvƒƒWƒFƒNƒg‚Ì’ñˆÄ‘‚Ìì¬i’S“–ÒÄƒAƒTƒCƒ“‚Ì‰Â”\«‚ ‚è‚Ü‚·j', TO_DATE('2025-02-02', 'YYYY-MM-DD'), '“c’†', '‚', 0, 'ŒÚ‹q’²¸')
+                                                                                                                                               *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-12899: —ñ"INFO"."TICKET"."TITLE"‚Ì’l‚ª‘å‚«‚·‚¬‚Ü‚·(ÀÛ: 62AÅ‘å: 60)
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (13, 'ss23304007@ga.ttc.ac.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', 'LOW', 0, '‰Æ–')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02290: ƒ`ƒFƒbƒN§–ñ(INFO.CK_TICKET_IMPORTANCE)‚Éˆá”½‚µ‚Ü‚µ‚½
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (14, 'ss23304007@ga.ttc.ac.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', NULL, '‰Æ–')
+                                                                                                                                                                                                              *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."TICKET"."PROGRESS")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (1, 'ss23304007@ga.ttc.ac.jp', 'ƒSƒ~o‚µ', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ƒ}ƒ}', '’á', 0, '‰Æ–')
+*
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00001: ˆêˆÓ§–ñ(INFO.SYS_C008362)‚É”½‚µ‚Ä‚¢‚Ü‚·
+
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:39:42 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:25:40 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+•\‚ªíœ‚³‚ê‚Ü‚µ‚½B
+
+
+‡˜‚ªíœ‚³‚ê‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:39:44 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:39:42 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+•\‚ªíœ‚³‚ê‚Ü‚µ‚½B
+
+drop sequence users_Sequence
+              *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-02289: ‡˜‚ª‘¶İ‚µ‚Ü‚¹‚ñB
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:40:10 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:39:44 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+•\‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:40:12 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:40:11 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+‡˜‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+    importance VARCHAR2(10) NOT NULL CONSTRAINT CK_TICKET_IMPORTANCE CHECK (importance IN ('ä½', 'ä¸­', 'é«˜')),
+                                                                                                  *
+s7‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00907: ‰EƒJƒbƒR‚ª‚ ‚è‚Ü‚¹‚ñB
+
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:40:19 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:40:12 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+
+1s‚ªì¬‚³‚ê‚Ü‚µ‚½B
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('ichiroutanaka@hoge.jp', 'ç”°ä¸­ ä¸€éƒ', 'StrongP@ssw0rd1', 'WeakP@ssw0rd1', 'å®¶æ—')
+                                                                                                                            *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00917: ƒJƒ“ƒ}‚ª‚ ‚è‚Ü‚¹‚ñB
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser7@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser1@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")‚É‚ÍNULL‚Í‘}“ü‚Å‚«‚Ü‚¹‚ñB
+
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on ‹à 9Œ 27 10:40:20 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+ÅI³íƒƒOƒCƒ“ŠÔ: ‹à 9Œ  27 2024 10:40:19 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+‚ÉÚ‘±‚³‚ê‚Ü‚µ‚½B
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'ss23304007@ga.ttc.ac.jp', 'ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã®ææ¡ˆæ›¸ã®ä½œæˆï¼ˆæ‹…å½“è€…å†ã‚¢ã‚µã‚¤ãƒ³ã®å¯èƒ½æ€§ã‚ã‚Šã€‚ï¼‰', TO_DATE('2025-02-02', 'YYYY-MM-DD'), 'ç”°ä¸­', 'é«˜', 0, 'é¡§å®¢èª¿æŸ»')
+                                                                                                                                                                                                                                                                          *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00917: ƒJƒ“ƒ}‚ª‚ ‚è‚Ü‚¹‚ñB
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (ticket_sequence.NEXTVAL, 'mt23304012@ga.ttc.ac.jp', 'Unit Test', TO_DATE('2024-11-09', 'YYYY-MM-DD'), 'é½‹è—¤', 'é«˜', 0, 'ãƒ†ã‚¹ãƒˆ')
+                                                                                                                                                                                                                                          *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00917: ƒJƒ“ƒ}‚ª‚ ‚è‚Ü‚¹‚ñB
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (12, 'ss23304007@ga.ttc.ac.jp', 'ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã®ææ¡ˆæ›¸ã®ä½œæˆï¼ˆæ‹…å½“è€…å†ã‚¢ã‚µã‚¤ãƒ³ã®å¯èƒ½æ€§ã‚ã‚Šã¾ã™ï¼‰', TO_DATE('2025-02-02', 'YYYY-MM-DD'), 'ç”°ä¸­', 'é«˜', 0, 'é¡§å®¢èª¿æŸ»')
+                                                                                                                                                                                                                                                        *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00917: ƒJƒ“ƒ}‚ª‚ ‚è‚Ü‚¹‚ñB
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (13, 'ss23304007@ga.ttc.ac.jp', 'ã‚´ãƒŸå‡ºã—', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ãƒãƒ', 'LOW', 0, 'å®¶äº‹')
+                                                                                                                                                                      *
+s1‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B:
+ORA-00917: ƒJƒ“ƒ}‚ª‚ ‚è‚Ü‚¹‚ñB
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+ERROR:
+ORA-01756: ˆø—p•„•t‚«•¶š—ñ‚ª³‚µ‚­I—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ
+
+
+
+ƒRƒ~ƒbƒg‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0‚Æ‚ÌÚ‘±‚ªØ’f‚³‚ê‚Ü‚µ‚½B
+
+SQL*Plus: Release 19.0.0.0.0 - Production on é‡‘ 9æœˆ 27 10:44:57 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+æœ€çµ‚æ­£å¸¸ãƒ­ã‚°ã‚¤ãƒ³æ™‚é–“: é‡‘ 9æœˆ  27 2024 10:40:21 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+ã«æ¥ç¶šã•ã‚Œã¾ã—ãŸã€‚
+drop table ticket
+           *
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-00942: è¡¨ã¾ãŸã¯ãƒ“ãƒ¥ãƒ¼ãŒå­˜åœ¨ã—ã¾ã›ã‚“ã€‚
+
+
+
+é †åºãŒå‰Šé™¤ã•ã‚Œã¾ã—ãŸã€‚
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0ã¨ã®æ¥ç¶šãŒåˆ‡æ–­ã•ã‚Œã¾ã—ãŸã€‚
+
+SQL*Plus: Release 19.0.0.0.0 - Production on é‡‘ 9æœˆ 27 10:44:58 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+æœ€çµ‚æ­£å¸¸ãƒ­ã‚°ã‚¤ãƒ³æ™‚é–“: é‡‘ 9æœˆ  27 2024 10:44:57 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+ã«æ¥ç¶šã•ã‚Œã¾ã—ãŸã€‚
+
+è¡¨ãŒå‰Šé™¤ã•ã‚Œã¾ã—ãŸã€‚
+
+drop sequence users_Sequence
+              *
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-02289: é †åºãŒå­˜åœ¨ã—ã¾ã›ã‚“ã€‚
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0ã¨ã®æ¥ç¶šãŒåˆ‡æ–­ã•ã‚Œã¾ã—ãŸã€‚
+
+SQL*Plus: Release 19.0.0.0.0 - Production on é‡‘ 9æœˆ 27 10:45:07 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+æœ€çµ‚æ­£å¸¸ãƒ­ã‚°ã‚¤ãƒ³æ™‚é–“: é‡‘ 9æœˆ  27 2024 10:44:58 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+ã«æ¥ç¶šã•ã‚Œã¾ã—ãŸã€‚
+
+è¡¨ãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+ã‚³ãƒŸãƒƒãƒˆãŒå®Œäº†ã—ã¾ã—ãŸã€‚
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0ã¨ã®æ¥ç¶šãŒåˆ‡æ–­ã•ã‚Œã¾ã—ãŸã€‚
+
+SQL*Plus: Release 19.0.0.0.0 - Production on é‡‘ 9æœˆ 27 10:45:09 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+æœ€çµ‚æ­£å¸¸ãƒ­ã‚°ã‚¤ãƒ³æ™‚é–“: é‡‘ 9æœˆ  27 2024 10:45:07 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+ã«æ¥ç¶šã•ã‚Œã¾ã—ãŸã€‚
+
+é †åºãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+è¡¨ãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+ã‚³ãƒŸãƒƒãƒˆãŒå®Œäº†ã—ã¾ã—ãŸã€‚
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0ã¨ã®æ¥ç¶šãŒåˆ‡æ–­ã•ã‚Œã¾ã—ãŸã€‚
+
+SQL*Plus: Release 19.0.0.0.0 - Production on é‡‘ 9æœˆ 27 10:45:17 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+æœ€çµ‚æ­£å¸¸ãƒ­ã‚°ã‚¤ãƒ³æ™‚é–“: é‡‘ 9æœˆ  27 2024 10:45:09 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+ã«æ¥ç¶šã•ã‚Œã¾ã—ãŸã€‚
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser2@hoge.jp', 'Error User1', 'password123', NULL, 'ãƒ†ã‚¹ãƒˆ')
+*
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-02290: ãƒã‚§ãƒƒã‚¯åˆ¶ç´„(INFO.CK_USER_PASSWORD)ã«é•åã—ã¾ã—ãŸ
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser3@hoge.jp', 'Error User2', 'AAAAaaaa1111!', NULL, 'ãƒ†ã‚¹ãƒˆ')
+*
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-02290: ãƒã‚§ãƒƒã‚¯åˆ¶ç´„(INFO.CK_USER_PASSWORD)ã«é•åã—ã¾ã—ãŸ
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser4@hoge.jp', 'Error User3', 'Short1!', NULL, 'ãƒ†ã‚¹ãƒˆ')
+*
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-02290: ãƒã‚§ãƒƒã‚¯åˆ¶ç´„(INFO.CK_USER_PASSWORD)ã«é•åã—ã¾ã—ãŸ
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer5@hoge.jp', 'Error User4', '12345678', NULL, 'ãƒ†ã‚¹ãƒˆ')
+*
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-02290: ãƒã‚§ãƒƒã‚¯åˆ¶ç´„(INFO.CK_USER_PASSWORD)ã«é•åã—ã¾ã—ãŸ
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('', 'Error User5', 'ErrorUser123!', NULL, 'ãƒ†ã‚¹ãƒˆ')
+                                                                                  *
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-01400: ("INFO"."USERS"."EMAIL")ã«ã¯NULLã¯æŒ¿å…¥ã§ãã¾ã›ã‚“ã€‚
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer6@hoge.jp', '', 'ErrorUser123!', NULL, 'ãƒ†ã‚¹ãƒˆ')
+                                                                                                      *
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-01400: ("INFO"."USERS"."USER_NAME")ã«ã¯NULLã¯æŒ¿å…¥ã§ãã¾ã›ã‚“ã€‚
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser7@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")ã«ã¯NULLã¯æŒ¿å…¥ã§ãã¾ã›ã‚“ã€‚
+
+
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser1@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '')
+                                                                                                                                             *
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-01400: ("INFO"."USERS"."SECRET_WORD")ã«ã¯NULLã¯æŒ¿å…¥ã§ãã¾ã›ã‚“ã€‚
+
+
+
+ã‚³ãƒŸãƒƒãƒˆãŒå®Œäº†ã—ã¾ã—ãŸã€‚
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0ã¨ã®æ¥ç¶šãŒåˆ‡æ–­ã•ã‚Œã¾ã—ãŸã€‚
+
+SQL*Plus: Release 19.0.0.0.0 - Production on é‡‘ 9æœˆ 27 10:45:18 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+æœ€çµ‚æ­£å¸¸ãƒ­ã‚°ã‚¤ãƒ³æ™‚é–“: é‡‘ 9æœˆ  27 2024 10:45:17 +09:00
+
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+ã«æ¥ç¶šã•ã‚Œã¾ã—ãŸã€‚
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+
+1è¡ŒãŒä½œæˆã•ã‚Œã¾ã—ãŸã€‚
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (null, 'ichiroutanaka@hoge.jp', 'ã‚´ãƒŸå‡ºã—', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ãƒãƒ', 'ä½', 0, 'å®¶äº‹')
+                                                                                                                *
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-01400: ("INFO"."TICKET"."TICKET_ID")ã«ã¯NULLã¯æŒ¿å…¥ã§ãã¾ã›ã‚“ã€‚
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (11, 'NULL', 'ã‚´ãƒŸå‡ºã—', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ãƒãƒ', 'ä½', 0, 'å®¶äº‹')
+*
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-02291: æ•´åˆæ€§åˆ¶ç´„(INFO.FK_TICKET_USER)ã«é•åã—ã¾ã—ãŸ - è¦ªã‚­ãƒ¼ãŒã‚ã‚Šã¾ã›ã‚“
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (12, 'ss23304007@ga.ttc.ac.jp', 'ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã®ææ¡ˆæ›¸ã®ä½œæˆï¼ˆæ‹…å½“è€…å†ã‚¢ã‚µã‚¤ãƒ³ã®å¯èƒ½æ€§ã‚ã‚Šã¾ã™ï¼‰', TO_DATE('2025-02-02', 'YYYY-MM-DD'), 'ç”°ä¸­', 'é«˜', 0, 'é¡§å®¢èª¿æŸ»')
+                                                                                                                                               *
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-12899: åˆ—"INFO"."TICKET"."TITLE"ã®å€¤ãŒå¤§ãã™ãã¾ã™(å®Ÿéš›: 62ã€æœ€å¤§: 60)
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (13, 'ss23304007@ga.ttc.ac.jp', 'ã‚´ãƒŸå‡ºã—', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ãƒãƒ', 'LOW', 0, 'å®¶äº‹')
+*
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-02290: ãƒã‚§ãƒƒã‚¯åˆ¶ç´„(INFO.CK_TICKET_IMPORTANCE)ã«é•åã—ã¾ã—ãŸ
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (14, 'ss23304007@ga.ttc.ac.jp', 'ã‚´ãƒŸå‡ºã—', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ãƒãƒ', 'ä½', NULL, 'å®¶äº‹')
+                                                                                                                                                                                                        *
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-01400: ("INFO"."TICKET"."PROGRESS")ã«ã¯NULLã¯æŒ¿å…¥ã§ãã¾ã›ã‚“ã€‚
+
+
+INSERT INTO ticket (ticket_id, email, title, deadline, assigned_person, importance, progress, category) VALUES (1, 'ss23304007@ga.ttc.ac.jp', 'ã‚´ãƒŸå‡ºã—', TO_DATE('2024-10-03', 'YYYY-MM-DD'), 'ãƒãƒ', 'ä½', 0, 'å®¶äº‹')
+*
+è¡Œ1ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚:
+ORA-00001: ä¸€æ„åˆ¶ç´„(INFO.SYS_C008381)ã«åã—ã¦ã„ã¾ã™
+
+
+
+ã‚³ãƒŸãƒƒãƒˆãŒå®Œäº†ã—ã¾ã—ãŸã€‚
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0ã¨ã®æ¥ç¶šãŒåˆ‡æ–­ã•ã‚Œã¾ã—ãŸã€‚

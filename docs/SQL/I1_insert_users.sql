@@ -1,14 +1,14 @@
-INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('ss23304007@ga.ttc.ac.jp', 'âV“¡ ‘nŒÈ', 'Abc12345&!', 'NewAbc123!', 'v‚¢o');
-INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('mt23304012@ga.ttc.ac.jp', '“c‹v•Û ‰ë–ç', 'Xy7890&@', 'Xy8901@&', '–¢—ˆ‚Ì–²');
-INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('ichiroutanaka@hoge.jp', '“c’† ˆê˜Y', 'StrongP@ssw0rd1', 'WeakP@ssw0rd1', '‰Æ‘°');
---ƒGƒ‰[‚ª”­¶
-INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser1@hoge.jp', 'Test User', 'TestUser123!', NULL, 'ƒeƒXƒg');
-INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser2@hoge.jp', 'Error User1', 'password123', NULL, 'ƒeƒXƒg');
-INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser3@hoge.jp', 'Error User2', 'AAAAaaaa1111!', NULL, 'ƒeƒXƒg');
-INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser4@hoge.jp', 'Error User3', 'Short1!', NULL, 'ƒeƒXƒg');
-INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer5@hoge.jp', 'Error User4', '12345678', NULL, 'ƒeƒXƒg');
-INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('', 'Error User5', 'ErrorUser123!', NULL, 'ƒeƒXƒg');
-INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer6@hoge.jp', '', 'ErrorUser123!', NULL, 'ƒeƒXƒg');
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('ss23304007@ga.ttc.ac.jp', 'é½‹è—¤ å‰µå·±', 'Abc12345&!', 'NewAbc123!', 'æ€ã„å‡º');
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('mt23304012@ga.ttc.ac.jp', 'ç”°ä¹…ä¿ é›…ä¹Ÿ', 'Xy7890&@', 'Xy8901@&', 'æœªæ¥ã®å¤¢');
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('ichiroutanaka@hoge.jp', 'ç”°ä¸­ ä¸€éƒ', 'StrongP@ssw0rd1', 'WeakP@ssw0rd1', 'å®¶æ—');
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser1@hoge.jp', 'Test User', 'TestUser123!', NULL, 'ãƒ†ã‚¹ãƒˆ');
+--ä»¥ä¸‹ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿ
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser2@hoge.jp', 'Error User1', 'password123', NULL, 'ãƒ†ã‚¹ãƒˆ');
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser3@hoge.jp', 'Error User2', 'AAAAaaaa1111!', NULL, 'ãƒ†ã‚¹ãƒˆ');
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser4@hoge.jp', 'Error User3', 'Short1!', NULL, 'ãƒ†ã‚¹ãƒˆ');
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer5@hoge.jp', 'Error User4', '12345678', NULL, 'ãƒ†ã‚¹ãƒˆ');
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('', 'Error User5', 'ErrorUser123!', NULL, 'ãƒ†ã‚¹ãƒˆ');
+INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuer6@hoge.jp', '', 'ErrorUser123!', NULL, 'ãƒ†ã‚¹ãƒˆ');
 INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser7@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '');
 INSERT INTO users (email, user_name, password, old_password, secret_word) VALUES ('testuser1@hoge.jp', 'Error User6', 'ErrorUser123!', NULL, '');
 
