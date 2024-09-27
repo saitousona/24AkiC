@@ -56,7 +56,7 @@ public class FixOrCreateTicketServlet extends HttpServlet {
             	System.out.println("Action is update");
                 MainToDoBean bean = new MainToDoBean(ticketId, title, deadline, assignedPerson, importance, progress, category, userEmail);
                 ticketDAO.updateTicket(bean);
-            } else if ("create".equals(action)) {
+            } else if("create".equals(action)) {
             	System.out.println("Action is create");
             	
                 MainToDoBean newTicket = new MainToDoBean(ticketId, title, deadline, assignedPerson, importance, progress, category, userEmail);

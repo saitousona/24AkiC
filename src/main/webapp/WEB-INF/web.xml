@@ -95,4 +95,22 @@
     	<servlet-name>FixOrCreateTicketServlet</servlet-name>
     	<url-pattern>/FixOrCreateTicketServlet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>ResetPasswordServlet</servlet-name>
+    	<servlet-class>ticket.ResetPasswordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>ResetPasswordServlet</servlet-name>
+    	<url-pattern>/ResetPasswordServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>ResetPasswordResult</servlet-name>
+    	<jsp-file>/WEB-INF/JSP/ResetPasswordResult.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>ResetPasswordResult</servlet-name>
+    	<url-pattern>/ResetPasswordResult</url-pattern>
+    </servlet-mapping>
 </web-app>
