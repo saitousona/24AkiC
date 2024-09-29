@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>ユーザー作成ページ</title>
+    <script>
+        function validatePassword() {
+            const password = document.querySelector('input[name="password"]').value;
+            const confirmPassword = document.querySelector('input[name="confirm_password"]').value;
+            const errorMessages = [];
+
+            // パスワードの長さをチェック
+            if (password.length < 8 || password.length > 64) {
+                errorMessages.push("パスワードは8文字以上64文字以下でなければなりません。");
+            }
+            // 大文字が含まれているかチェック
+            if (!/[A-Z]/.test(password)) {
+                errorMessages.push("パスワードには少なくとも1つの大文字を含める必要があります。");
+            }
+            // 小文字が含まれているかチェック
+            if (!/[a-z]/.test(password)) {
+                errorMessages.push("パスワードには少なくとも1つの小文字を含める必要があります。");
+            }
+            // 数字が含まれているかチェック
+            if (!/[0-9]/.test(password)) {
+                errorMessages.push("パスワードには少なくとも1つの数字を含める必要があります。");
+            }
+            // 3文字以上の連続した同じ文字が含まれているかチェック
+            if (/(.)\1{2,}/.test(password)) {
+                errorMessages.push("パスワードには3文字以上の連続した同じ文字を含めることはできません。");
+            }
+            // パスワードと確認用パスワードが一致するかチェック
+            if (password !== confirmPassword) {
+                errorMessages.push("パスワードと確認用パスワードが一致しません。");
+            }
+
+            // エラーメッセージがある場合、表示してフォーム送信をキャンセル
+            if (errorMessages.length > 0) {
+                alert(errorMessages.join("\n"));
+                return false; // フォーム送信をキャンセル
+            }
+            return true; // フォーム送信を許可
+        }
+    </script>
 </head>
 <body>
+    <h2>ユーザー作成ページ</h2>
+    <form action="/24AkiC/CreateUserServlet" method="post" onsubmit="return validatePassword()">
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
 
+        <label for="user_name">ユーザー名:</label>
+        <input type="text" name="user_name" required><br>
+
+        <label for="password">パスワード:</label>
+        <input type="password" name="password" required><br>
+
+        <label for="confirm_password">確認用パスワード:</label>
+        <input type="password" name="confirm_password" required><br>
+
+        <label for="secret_word">秘密のワード:</label>
+        <input type="text" name="secret_word" required><br>
+
+        <button type="submit">作成</button>
+    </form>
 </body>
 </html>

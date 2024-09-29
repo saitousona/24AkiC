@@ -113,4 +113,13 @@
     	<servlet-name>ResetPasswordResult</servlet-name>
     	<url-pattern>/ResetPasswordResult</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>CreateUserServlet</servlet-name>
+    	<servlet-class>ticket.CreateUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>CreateUserServlet</servlet-name>
+    	<url-pattern>/CreateUserServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
