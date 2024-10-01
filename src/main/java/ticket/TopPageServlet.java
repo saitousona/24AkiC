@@ -14,4 +14,8 @@ public class TopPageServlet extends HttpServlet {
         // LoginPage.jsp へのリダイレクト
         response.sendRedirect(request.getContextPath() + "/LoginPage");
     }
+    
+    protected void doGet(HttpServletRequest request, HttpServletResponse respose) throws ServletException, IOException {
+    	doPost(request, respose);
+    }
 }

@@ -11,6 +11,11 @@ public class MainToDoBean {
     private int progress; // 進行度
     private String category; // カテゴリー
     private String userEmail; // チケットの所有者のメールアドレス
+    
+    public MainToDoBean() {
+        // デフォルトコンストラクタ
+    }
+
 
     // コンストラクタ
     public MainToDoBean(int ticketId, String title, Date deadline, String assignedPerson, String importance, int progress, String category, String userEmail) {

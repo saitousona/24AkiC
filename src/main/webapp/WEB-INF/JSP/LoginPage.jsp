@@ -47,9 +47,9 @@
             <%= request.getAttribute("errorMessage") %>
         <% } %>
         
-        <a href="ResetPasswordPage.html" class="button">パスワードリセット</a>
+        <a href="HTML/ResetPasswordPage.html" class="button">パスワードリセット</a>
         
-        <a href="CreateUserPage.html" class="button">ユーザー作成</a>
+        <a href="HTML/CreateUserPage.html" class="button">ユーザー作成</a>
     </div>
     
 </body>
