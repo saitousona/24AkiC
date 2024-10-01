@@ -122,4 +122,12 @@
     	<servlet-name>CreateUserServlet</servlet-name>
     	<url-pattern>/CreateUserServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+    	<servlet-name>SearchTicketServlet</servlet-name>
+    	<servlet-class>ticket.SearchTicketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>SearchTicketServlet</servlet-name>
+    	<url-pattern>/SearchTicketServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
