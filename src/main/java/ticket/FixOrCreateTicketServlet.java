@@ -1,7 +1,7 @@
 package ticket;
 
 import java.io.IOException;
-import java.sql.Date; // Dateをインポート
+import java.sql.Date;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -10,9 +10,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import bean.MainToDoBean; // Beanクラスのインポート
-import dao.TicketOperationDAO; // DAOクラスのインポート
+import bean.MainToDoBean;
+import dao.TicketOperationDAO;
 
 public class FixOrCreateTicketServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -21,7 +22,7 @@ public class FixOrCreateTicketServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         
         String action = request.getParameter("action");
-        System.out.println("Action: " + action); // アクションの確認
+        System.out.println("Action: " + action); 
 
         Integer ticketId = null;
 
@@ -45,33 +46,49 @@ public class FixOrCreateTicketServlet extends HttpServlet {
             progress = Integer.parseInt(request.getParameter("progress"));
         }
         
-        // セッションまたはリクエストからEmailを取得
         String userEmail = (String) request.getParameter("email");
+        System.out.println("Emailは取れてるかな？" + userEmail);
 
         TicketOperationDAO ticketDAO = new TicketOperationDAO();
 
         System.out.println(ticketId + title + deadline + assignedPerson + importance + progress + category + userEmail);
         try {
+            String redirectPage = ""; 
+            
             if ("update".equals(action)) {
-            	System.out.println("Action is update");
+                System.out.println("Action is update");
                 MainToDoBean bean = new MainToDoBean(ticketId, title, deadline, assignedPerson, importance, progress, category, userEmail);
                 ticketDAO.updateTicket(bean);
-            } else if("create".equals(action)) {
-            	System.out.println("Action is create");
-            	
+            } else if ("create".equals(action)) {
+                System.out.println("Action is create");
                 MainToDoBean newTicket = new MainToDoBean(ticketId, title, deadline, assignedPerson, importance, progress, category, userEmail);
-                try {
-                    System.out.println("Insert ticket process started"); // 呼び出し確認
-                    ticketDAO.insertTicket(newTicket); // メソッドを呼び出す
-                    System.out.println("Insert ticket process finished");
-                } catch (Exception e) {
-                    e.printStackTrace(); // エラーログを出力
-                }
+                ticketDAO.insertTicket(newTicket);
             }
+            
+            HttpSession session = request.getSession();
+            String currentPage = (String) session.getAttribute("currentPage"); // セッションから属性を取得
+            System.out.println("現在のページ: " + currentPage);
+
+
+            // currentPage に基づいてリダイレクト先を設定
+            if (currentPage != null) {
+                if (currentPage.contains("MainToDoServlet")) {
+                    redirectPage = "MainToDoServlet";
+                } else if (currentPage.contains("ImportanceToDoServlet")) {
+                    redirectPage = "ImportanceToDoServlet";
+                } else {
+                    redirectPage = "MainToDoServlet"; 
+                }
+            } else {
+                redirectPage = "MainToDoServlet"; 
+            }
+
+            System.out.println("リダイレクト先のページ: " + redirectPage);
 
             List<MainToDoBean> tickets = ticketDAO.getAllTickets();
             request.setAttribute("tickets", tickets);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("MainToDoServlet");
+            
+            RequestDispatcher dispatcher = request.getRequestDispatcher(redirectPage);
             dispatcher.forward(request, response);
 
         } catch (NumberFormatException e) {
@@ -87,5 +104,9 @@ public class FixOrCreateTicketServlet extends HttpServlet {
             RequestDispatcher dispatcher = request.getRequestDispatcher("MainToDoServlet");
             dispatcher.forward(request, response);
         }
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doPost(request, response);
     }
 }
