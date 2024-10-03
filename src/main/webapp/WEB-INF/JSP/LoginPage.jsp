@@ -39,7 +39,7 @@
 	        <input type="password" id="password" name="password">
 	    </div>
 	    <div>
-	        <input type="button" value="ログイン" onclick="buttonclick();">
+	        <input type="button" value="ログイン" class="login-bottan" onclick="buttonclick();" ><br/>
 	    </div>
 	</form>
     <div id="error" style="color:red;">
@@ -48,7 +48,8 @@
         <% } %>
         
         <a href="HTML/ResetPasswordPage.html" class="button">パスワードリセット</a>
-        
+        &nbsp;
+         <%-- スペース　--%>
         <a href="HTML/CreateUserPage.html" class="button">ユーザー作成</a>
     </div>
     

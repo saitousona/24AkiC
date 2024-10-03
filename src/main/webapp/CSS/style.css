@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+h1,h2{
+  padding: 1rem 2rem;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+}
+
 .bg_pattern {
   position: fixed;
   top: 0;
@@ -16,11 +22,6 @@
   background-position: 0 0,20px 20px;
 }
 
-h1,h2{
-  padding: 1rem 2rem;
-  border-top: 3px solid #000;
-  border-bottom: 3px solid #000;
-}
 
 form button {
   display: inline-block;
@@ -44,6 +45,26 @@ form button .fa-position-right {
   top: calc(50% - .5em);
   right: 1rem;
 }
+
+
+.login-bottan {
+    display: inline-block; /* ボタンのように表示 */
+    background-color: #4CAF50; /* 背景色 */
+    color: white; /* テキスト色 */
+    border: none; /* ボーダーなし */
+    border-radius: 5px; /* 角の丸み */
+    padding: 10px 20px; /* 内部の余白 */
+    cursor: pointer; /* カーソルをポインタに */
+    font-size: 16px; /* フォントサイズ */
+    transition: background-color 0.3s ease; /* 背景色のトランジション */
+
+}
+
+/* ホバー時のスタイル */
+.login-bottan:hover {
+    background-color: #45a049; /* ホバー時の背景色 */
+}
+
 
 .container{
 	text-align: center;
