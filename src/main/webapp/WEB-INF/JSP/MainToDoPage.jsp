@@ -22,8 +22,8 @@
                 $('#ticketDetailForm').html(`
                     <h2>新規チケット作成</h2>
                     <button onclick="closeTicketDetail()">閉じる</button>
-                    <form action="FixOrCreateTicketServlet" method="post">
-                    	<input type="hidden" name="currentPage" value="<%= request.getRequestURI() %>">
+                    <form id="ticketForm" action="FixOrCreateTicketServlet" method="post">
+                        <input type="hidden" name="currentPage" value="<%= request.getRequestURI() %>">
                         <input type="hidden" name="ticketId" value="">
                         <input type="hidden" name="email" value="${sessionScope.email}"> <!-- Emailを渡す -->
                         <label for="title">タイトル:</label>
@@ -41,8 +41,9 @@
                         <label for="category">カテゴリー:</label>
                         <input type="text" id="category" name="category" value="">
                         <label for="progress">進捗:</label>
-                        <input type="number" id="progress" name="progress" value="">
-                        <button type="submit" name="action" value="create">作成</button>
+                        <input type="number" id="progress" name="progress" min="0" max="100" value="">
+                        <span id="progressError" style="color:red;"></span>
+                        <button type="submit" onclick="return validateProgress();" name="action" value="create">作成</button>
                     </form>
                 `);
                 $('#ticketDetailForm').show(); // 詳細エリアを表示
@@ -65,6 +66,20 @@
         // 詳細を閉じる関数
         function closeTicketDetail() {
             $('#ticketDetailForm').hide(); // 詳細エリアを非表示
+        }
+
+        // 進捗のバリデーション
+        function validateProgress() {
+            var progress = $('#progress').val();
+            var progressError = $('#progressError');
+
+            if (progress < 0 || progress > 100) {
+                progressError.text('進捗は0から100の範囲で入力してください。');
+                return false; // バリデーション失敗
+            }
+
+            progressError.text(''); // エラーメッセージをクリア
+            return true; // バリデーション成功
         }
 
         // 検索フォームを表示・非表示に切り替える関数
@@ -172,15 +187,14 @@
                 <div>完了したチケットはありません。</div>
             </c:if>
         </div>
+        <form action="LogoutServlet" method="post">
+            <button type="submit">ログアウト</button>
+        </form>
     </div>
 
-    <div class="ticket-detail" id="ticketDetailForm">
+    <div id="ticketDetailForm" class="ticket-detail">
         <!-- チケット詳細がここに表示される -->
-        <button onclick="closeTicketDetail()">閉じる</button> <!-- 閉じるボタン -->
     </div>
 
-    <div id="searchResults">
-        <!-- 検索結果がここに表示される -->
-    </div>
 </body>
 </html>

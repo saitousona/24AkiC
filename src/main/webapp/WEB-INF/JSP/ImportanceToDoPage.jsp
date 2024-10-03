@@ -7,18 +7,18 @@
     <link rel="stylesheet" type="text/css" href="styles.css"> <!-- CSSの読み込み -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQueryの読み込み -->
     
-        <%
-    		// 現在のページURLをセッションに保存
-    		HttpSession userSession = request.getSession();
-    		session.setAttribute("currentPage", "ImportanceToDoServlet");
-		%>
+    <%
+        // 現在のページURLをセッションに保存
+        HttpSession userSession = request.getSession();
+        session.setAttribute("currentPage", "ImportanceToDoServlet");
+    %>
     
-        <h1>${userName}さんのToDoリスト</h1>
-        
+    <h1>${userName}さんのToDoリスト</h1>
+    
     <script>
         // チケット詳細を取得する関数
         function loadTicketDetail(ticketId) {
-        	console.log("Current Page:", '<%= request.getRequestURI() %>');
+            console.log("Current Page:", '<%= request.getRequestURI() %>');
             
             if (ticketId === 'new') {
                 $('#ticketDetailForm').html(`
@@ -141,49 +141,52 @@
         <div class="right-pane">
             <h2>チケット一覧</h2>
 
-			<h3>高重要度</h3>
-			<c:set var="hasHighImportance" value="false" />
-			<c:forEach var="ticket" items="${tickets}">
-			    <c:if test="${ticket.importance == '高'}">
-			        <div>
-			            <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">${ticket.title}</a> - ${ticket.deadline}
-			        </div>
-			        <c:set var="hasHighImportance" value="true" /> <!-- フラグを設定 -->
-			    </c:if>
-			</c:forEach>
-			<c:if test="${!hasHighImportance}">
-			    <div>高重要度のチケットはありません。</div>
-			</c:if>
-			
-			<h3>中重要度</h3>
-			<c:set var="hasMediumImportance" value="false" />
-			<c:forEach var="ticket" items="${tickets}">
-			    <c:if test="${ticket.importance == '中'}">
-			        <div>
-			            <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">${ticket.title}</a> - ${ticket.deadline}
-			        </div>
-			        <c:set var="hasMediumImportance" value="true" /> <!-- フラグを設定 -->
-			    </c:if>
-			</c:forEach>
-			<c:if test="${!hasMediumImportance}">
-			    <div>中重要度のチケットはありません。</div>
-			</c:if>
-			
-			<h3>低重要度</h3>
-			<c:set var="hasLowImportance" value="false" />
-			<c:forEach var="ticket" items="${tickets}">
-			    <c:if test="${ticket.importance == '低'}">
-			        <div>
-			            <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">${ticket.title}</a> - ${ticket.deadline}
-			        </div>
-			        <c:set var="hasLowImportance" value="true" /> <!-- フラグを設定 -->
-			    </c:if>
-			</c:forEach>
-			<c:if test="${!hasLowImportance}">
-			    <div>低重要度のチケットはありません。</div>
-			</c:if>
+            <h3>高重要度</h3>
+            <c:set var="hasHighImportance" value="false" />
+            <c:forEach var="ticket" items="${tickets}">
+                <c:if test="${ticket.importance == '高'}">
+                    <div>
+                        <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">${ticket.title}</a> - ${ticket.deadline}
+                    </div>
+                    <c:set var="hasHighImportance" value="true" /> <!-- フラグを設定 -->
+                </c:if>
+            </c:forEach>
+            <c:if test="${!hasHighImportance}">
+                <div>高重要度のチケットはありません。</div>
+            </c:if>
+            
+            <h3>中重要度</h3>
+            <c:set var="hasMediumImportance" value="false" />
+            <c:forEach var="ticket" items="${tickets}">
+                <c:if test="${ticket.importance == '中'}">
+                    <div>
+                        <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">${ticket.title}</a> - ${ticket.deadline}
+                    </div>
+                    <c:set var="hasMediumImportance" value="true" /> <!-- フラグを設定 -->
+                </c:if>
+            </c:forEach>
+            <c:if test="${!hasMediumImportance}">
+                <div>中重要度のチケットはありません。</div>
+            </c:if>
+            
+            <h3>低重要度</h3>
+            <c:set var="hasLowImportance" value="false" />
+            <c:forEach var="ticket" items="${tickets}">
+                <c:if test="${ticket.importance == '低'}">
+                    <div>
+                        <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">${ticket.title}</a> - ${ticket.deadline}
+                    </div>
+                    <c:set var="hasLowImportance" value="true" /> <!-- フラグを設定 -->
+                </c:if>
+            </c:forEach>
+            <c:if test="${!hasLowImportance}">
+                <div>低重要度のチケットはありません。</div>
+            </c:if>
 
         </div>
+        <form action="LogoutServlet" method="post">
+            <input type="submit" value="ログアウト">
+        </form>        
     </div>
 
     <div class="ticket-detail" id="ticketDetailForm">
