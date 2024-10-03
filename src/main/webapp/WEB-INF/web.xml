@@ -130,4 +130,13 @@
     	<servlet-name>SearchTicketServlet</servlet-name>
     	<url-pattern>/SearchTicketServlet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>ImportanceToDoServlet</servlet-name>
+    	<servlet-class>ticket.ImportanceToDoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>ImportanceToDoServlet</servlet-name>
+    	<url-pattern>/ImportanceToDoServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -16,7 +16,7 @@ import bean.MainToDoBean;
 import dao.MainToDoDAO;
 
 public class MainToDoServlet extends HttpServlet {
-    
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -34,34 +34,35 @@ public class MainToDoServlet extends HttpServlet {
         // チケットを取得するためDAOを使用
         MainToDoDAO mainToDoDAO = new MainToDoDAO();
         List<MainToDoBean> userTickets;
-		try {
-			userTickets = mainToDoDAO.getTicketsByUserEmail(email);
-		
+        try {
+            userTickets = mainToDoDAO.getTicketsByUserEmail(email);
 
-        // 進捗状況ごとにチケットを分類
-        List<MainToDoBean> notStartedTickets = new ArrayList<>();
-        List<MainToDoBean> inProgressTickets = new ArrayList<>();
-        List<MainToDoBean> completedTickets = new ArrayList<>();
+            // 進捗状況ごとにチケットを分類
+            List<MainToDoBean> notStartedTickets = new ArrayList<>();
+            List<MainToDoBean> inProgressTickets = new ArrayList<>();
+            List<MainToDoBean> completedTickets = new ArrayList<>();
 
-        for (MainToDoBean ticket : userTickets) {
-            if (ticket.getProgress() == 0) {
-                notStartedTickets.add(ticket);
-            } else if (ticket.getProgress() < 100) {
-                inProgressTickets.add(ticket);
-            } else {
-                completedTickets.add(ticket);
+            for (MainToDoBean ticket : userTickets) {
+                if (ticket.getProgress() == 0) {
+                    notStartedTickets.add(ticket);
+                } else if (ticket.getProgress() < 100) {
+                    inProgressTickets.add(ticket);
+                } else {
+                    completedTickets.add(ticket);
+                }
             }
-        }
-        
 
-        // リクエストスコープにチケットを設定
-        request.setAttribute("notStartedTickets", notStartedTickets);
-        request.setAttribute("inProgressTickets", inProgressTickets);
-        request.setAttribute("completedTickets", completedTickets);
-		} catch (SQLException e) {
-			// TODO 自動生成された catch ブロック
-			e.printStackTrace();
-		}
+            // リクエストスコープにチケットを設定
+            request.setAttribute("notStartedTickets", notStartedTickets);
+            request.setAttribute("inProgressTickets", inProgressTickets);
+            request.setAttribute("completedTickets", completedTickets);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            response.sendRedirect("error.jsp");
+            return;
+        }
+
         // JSPにフォワード
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/JSP/MainToDoPage.jsp");
         dispatcher.forward(request, response);

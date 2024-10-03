@@ -7,9 +7,19 @@
 </head>
 <body>
     <h2>チケット詳細</h2>
+    
+    <!-- チケット修正フォーム -->
     <form action="FixOrCreateTicketServlet" method="post">
+        <!-- チケットIDをhiddenフィールドとして設定 -->
         <input type="hidden" name="ticketId" value="${ticket.ticketId}">
+
+        <!-- セッションから前ページのURLを取得し、hiddenフィールドに設定 -->
+        <input type="hidden" name="previousPage" value="${sessionScope.currentPage}">
         
+        <!-- Emailをhiddenフィールドとして設定 -->
+        <input type="hidden" name="email" value="${sessionScope.email}">
+        
+        <!-- フォームフィールド -->
         <label for="title">タイトル:</label>
         <input type="text" id="title" name="title" value="${ticket.title}" required>
         
@@ -35,7 +45,14 @@
         <!-- 修正ボタン -->
         <button type="submit" name="action" value="update">修正</button>
     </form>
+    
     <!-- 閉じるボタンを追加 -->
     <button onclick="closeTicketDetail()">閉じる</button>
+    
+    <script>
+        function closeTicketDetail() {
+            window.history.back();  // 「閉じる」ボタンを押すと前のページに戻る
+        }
+    </script>
 </body>
 </html>

@@ -15,7 +15,13 @@
     <c:forEach var="ticket" items="${searchResults}">
         <p>タイトル: ${ticket.title}, 進捗: ${ticket.progress}, 重要度: ${ticket.importance}, カテゴリー: ${ticket.category}</p>
     </c:forEach>
+    
+    <%
+    // 現在のページURLをセッションに保存
+    HttpSession userSession = request.getSession(); // 変数名を変更
+    String currentPage = (String) userSession.getAttribute("currentPage");
+	%>
 
-    <a href="MainToDoServlet">全件表示に戻る</a>
+    <a href="<%= currentPage %>">全件表示に戻る</a>
 </body>
 </html>
