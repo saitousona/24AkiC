@@ -13,6 +13,8 @@
     		session.setAttribute("currentPage", "ImportanceToDoServlet");
 		%>
     
+        <h1>${userName}さんのToDoリスト</h1>
+        
     <script>
         // チケット詳細を取得する関数
         function loadTicketDetail(ticketId) {

@@ -55,7 +55,7 @@ public class LoginServlet extends HttpServlet {
             request.setAttribute("errorMessage", "メールアドレスまたはパスワードが間違っています");
 
             // ログインページにフォワード
-            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("TopPageServlet");
             dispatcher.forward(request, response);
         }
     }
@@ -64,7 +64,7 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         // 通常はPOSTメソッドを使用するが、GETで来た場合もlogin.jspにフォワード
-        RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("TopPageServlet");
         dispatcher.forward(request, response);
     }
 }

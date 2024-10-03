@@ -12,6 +12,7 @@
     userSession.setAttribute("currentPage", "MainToDoServlet");
 %>
 
+    <h1>${userName}さんのToDoリスト</h1>
     
     <script>
         // チケット詳細を取得する関数
