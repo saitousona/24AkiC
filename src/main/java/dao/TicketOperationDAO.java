@@ -53,6 +53,16 @@ public class TicketOperationDAO {
     public void insertTicket(MainToDoBean ticket) throws SQLException, ClassNotFoundException {
         String sql = "INSERT INTO Ticket (TICKET_ID, EMAIL, TITLE, DEADLINE, ASSIGNED_PERSON, IMPORTANCE, PROGRESS, CATEGORY) " +
                      "VALUES (TICKET_Sequence.NEXTVAL, ?, ?, ?, ?, ?, ?, ?)";
+        
+        System.out.println("SQL Statement:1回目 " + sql);
+        System.out.println("Parameters: " + 
+                           "Email: " + ticket.getUserEmail() + ", " +
+                           "Title: " + ticket.getTitle() + ", " +
+                           "Deadline: " + ticket.getDeadline() + ", " +
+                           "Assigned Person: " + ticket.getAssignedPerson() + ", " +
+                           "Importance: " + ticket.getImportance() + ", " +
+                           "Progress: " + ticket.getProgress() + ", " +
+                           "Category: " + ticket.getCategory());
 
         try (Connection conn = dbConnector.getConnection(); 
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -68,7 +78,7 @@ public class TicketOperationDAO {
             pstmt.setString(7, ticket.getCategory());
 
             // SQL文とパラメータのログ
-            System.out.println("SQL Statement: " + sql);
+            System.out.println("SQL Statement:2回目 " + sql);
             System.out.println("Parameters: " + 
                                "Email: " + ticket.getUserEmail() + ", " +
                                "Title: " + ticket.getTitle() + ", " +
