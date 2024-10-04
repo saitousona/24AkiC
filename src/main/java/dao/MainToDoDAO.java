@@ -110,7 +110,7 @@ public class MainToDoDAO {
  // ユーザー名を取得するメソッド
     public String getUserNameByEmail(String email) throws SQLException {
         String userName = null;
-        String sql = "SELECT name FROM Users WHERE email = ?";
+        String sql = "SELECT user_name FROM Users WHERE email = ?";
 
         try {
             connection = DBConnector.getConnection();

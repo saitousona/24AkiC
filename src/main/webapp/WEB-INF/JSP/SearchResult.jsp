@@ -13,8 +13,10 @@
     </c:if>
 
     <c:forEach var="ticket" items="${searchResults}">
-        <p>タイトル: ${ticket.title}, 進捗: ${ticket.progress}, 重要度: ${ticket.importance}, カテゴリー: ${ticket.category}</p>
+        <p>タイトル: ${ticket.title}, 締め切り: ${ticket.deadline}, 担当者: ${ticket.assignedPerson}, 重要度: ${ticket.importance}, カテゴリー: ${ticket.category}, 進捗: ${ticket.progress}</p>
     </c:forEach>
+    
+
     
     <%
     // 現在のページURLをセッションに保存

@@ -51,7 +51,11 @@
     
     <script>
         function closeTicketDetail() {
-            window.history.back();  // 「閉じる」ボタンを押すと前のページに戻る
+            // セッションからcurrentPageを取得
+            var previousPage = '${sessionScope.currentPage}';
+            
+            // currentPageにリダイレクト
+            window.location.href = previousPage;  
         }
     </script>
 </body>

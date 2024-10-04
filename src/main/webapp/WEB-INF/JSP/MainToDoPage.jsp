@@ -195,6 +195,9 @@
     <div id="ticketDetailForm" class="ticket-detail">
         <!-- チケット詳細がここに表示される -->
     </div>
+        <div id="searchResults">
+        <!-- 検索結果がここに表示される -->
+    </div>
 
 </body>
 </html>
