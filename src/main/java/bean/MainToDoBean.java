@@ -15,7 +15,15 @@ public class MainToDoBean {
     public MainToDoBean() {
         // デフォルトコンストラクタ
     }
-
+    public MainToDoBean(String title, Date deadline, String assignedPerson, String importance, int progress, String category, String userEmail) {
+    	this.title = title;
+    	this.deadline = deadline;
+    	this.assignedPerson = assignedPerson;
+    	this.importance = importance;
+    	this.progress = progress;
+    	this.category = category;
+    	this.userEmail = userEmail;
+    }
 
     // コンストラクタ
     public MainToDoBean(int ticketId, String title, Date deadline, String assignedPerson, String importance, int progress, String category, String userEmail) {

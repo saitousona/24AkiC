@@ -17,7 +17,6 @@ import dao.MainToDoDAO;
 
 public class MainToDoServlet extends HttpServlet {
 
-    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -27,15 +26,22 @@ public class MainToDoServlet extends HttpServlet {
 
         if (email == null || email.isEmpty()) {
             // emailがセッションにない場合、ログインページにリダイレクト
-            response.sendRedirect("login.jsp");
+            response.sendRedirect("TopPageServlet");
             return;
         }
 
-        // チケットを取得するためDAOを使用
         MainToDoDAO mainToDoDAO = new MainToDoDAO();
-        List<MainToDoBean> userTickets;
+        String userName = null;
+
         try {
-            userTickets = mainToDoDAO.getTicketsByUserEmail(email);
+            // ユーザー名を取得
+            userName = mainToDoDAO.getUserNameByEmail(email);
+            
+            // ユーザー名をリクエストスコープに設定
+            request.setAttribute("userName", userName);
+
+            // チケットを取得
+            List<MainToDoBean> userTickets = mainToDoDAO.getTicketsByUserEmail(email);
 
             // 進捗状況ごとにチケットを分類
             List<MainToDoBean> notStartedTickets = new ArrayList<>();
@@ -67,6 +73,7 @@ public class MainToDoServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/JSP/MainToDoPage.jsp");
         dispatcher.forward(request, response);
     }
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

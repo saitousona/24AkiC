@@ -58,11 +58,16 @@ public class FixOrCreateTicketServlet extends HttpServlet {
             if ("update".equals(action)) {
                 System.out.println("Action is update");
                 MainToDoBean bean = new MainToDoBean(ticketId, title, deadline, assignedPerson, importance, progress, category, userEmail);
+                System.out.println("Action:Beanのインスタンス化");
                 ticketDAO.updateTicket(bean);
+                System.out.println("updateticketメソッドを実行しましたよ");
             } else if ("create".equals(action)) {
                 System.out.println("Action is create");
-                MainToDoBean newTicket = new MainToDoBean(ticketId, title, deadline, assignedPerson, importance, progress, category, userEmail);
+                System.out.println("Create:Beanのインスタンス化");
+                MainToDoBean newTicket = new MainToDoBean(title, deadline, assignedPerson, importance, progress, category, userEmail);
+                System.out.println("Createインスタンス化できましたよ");
                 ticketDAO.insertTicket(newTicket);
+                System.out.println("insertTicketできましたよ");
             }
             
             HttpSession session = request.getSession();

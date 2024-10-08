@@ -56,6 +56,15 @@ public class ResetPasswordDAO {
         return null;
     }
 
+    // 新しいパスワードが現在または過去のパスワードと一致しないか確認
+    public boolean isPasswordUsedBefore(String email, String newPassword) throws ClassNotFoundException {
+        String currentPassword = getCurrentPassword(email);
+        String oldPassword = getOldPassword(email);
+
+        // 新しいパスワードが現在または一世代前のパスワードと一致するかを確認
+        return newPassword.equals(currentPassword) || (oldPassword != null && newPassword.equals(oldPassword));
+    }
+
     // パスワードを更新
     public void updatePassword(String email, String newPassword, String currentPassword) throws ClassNotFoundException {
         String sql = "UPDATE USERS SET password = ?, old_password = ? WHERE email = ?";

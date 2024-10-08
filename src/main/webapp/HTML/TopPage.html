@@ -5,17 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Page</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    
+    <style>
+		form button {
+		  display: inline-block;
+		  background-color: #ff0000;
+		  color: #fff;
+		  text-decoration: none;
+		  padding: 1.2rem 4rem;
+		  border-radius: 100vh; 
+		  border: none;
+		  border-bottom: 5px solid #9f000c;
+		  position: relative;
+		}
+		
+		form button:hover {
+		  margin-top: 3px;
+		  border-bottom: 2px solid #9f000c;
+		}
+		
+		form button .fa-position-right {
+		  position: absolute;
+		  top: calc(50% - .5em);
+		  right: 1rem;
+		}
+	</style>
 </head>
 <body>
 	<!-- 背景要素 -->
 		<div class="bg_pattern Polka_v2"></div> 
 	<div class="container">
-    <h1>ようこそ！タスク管理へ！</h1><br/>
-    <p>下のボタンをクリックして入力してください! &#10549;</p><br/>
-    
-    <!-- Enterボタンを押すとTopPageServletが呼び出される -->
-    <form action="/24AkiC/TopPageServlet" method="POST">
-        <button type="submit">Enter</button>
-    </form>
+	    <h1>ようこそ！タスク管理へ！</h1><br/>
+	    <p>下のボタンをクリックして入力してください! &#10549;</p><br/>
+	    
+	    <!-- Enterボタンを押すとTopPageServletが呼び出される -->
+	    <form action="/24AkiC/TopPageServlet" method="POST">
+	        <button type="submit">Enter</button>
+	    </form>
+    </div>
 </body>
 </html>

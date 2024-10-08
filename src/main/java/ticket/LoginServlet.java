@@ -15,14 +15,12 @@ import dao.LoginDAO;
 
 public class LoginServlet extends HttpServlet {
 
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-    	
+        
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html;charset=UTF-8");
         response.setCharacterEncoding("UTF-8");
-
 
         // リクエストからemailとpasswordを取得
         String email = request.getParameter("email");
@@ -37,7 +35,7 @@ public class LoginServlet extends HttpServlet {
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
             request.setAttribute("errorMessage", "システムエラーが発生しました。管理者に連絡してください。");
-            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("TopPageServlet");
             dispatcher.forward(request, response);
             return;
         }
@@ -54,17 +52,9 @@ public class LoginServlet extends HttpServlet {
             // 認証失敗時にエラーメッセージをリクエストスコープにセット
             request.setAttribute("errorMessage", "メールアドレスまたはパスワードが間違っています");
 
-            // ログインページにフォワード
-            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+            // TopPageServletにフォワード
+            RequestDispatcher dispatcher = request.getRequestDispatcher("TopPageServlet");
             dispatcher.forward(request, response);
         }
-    }
-
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        // 通常はPOSTメソッドを使用するが、GETで来た場合もlogin.jspにフォワード
-        RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
-        dispatcher.forward(request, response);
     }
 }

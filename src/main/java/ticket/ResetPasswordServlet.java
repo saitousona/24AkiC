@@ -33,14 +33,14 @@ public class ResetPasswordServlet extends HttpServlet {
                 String oldPassword = resetPasswordDAO.getOldPassword(email);
 
                 if (newPassword.equals(confirmPassword)) {
-                    // 新しいパスワードが一世代前のパスワードと異なるか確認
-                    if (!newPassword.equals(oldPassword)) {
+                    // 新しいパスワードが現在のパスワードや一世代前のパスワードと異なるか確認
+                    if (!newPassword.equals(currentPassword) && !newPassword.equals(oldPassword)) {
                         // パスワードを更新
                         resetPasswordDAO.updatePassword(email, newPassword, currentPassword);
                         request.setAttribute("successMessage", "パスワードが変更されました。");
                         request.getRequestDispatcher("ResetPasswordResult").forward(request, response);
                     } else {
-                        request.setAttribute("errorMessage", "新しいパスワードは一世代前のパスワードと同じです。");
+                        request.setAttribute("errorMessage", "新しいパスワードは現在のパスワードまたは一世代前のパスワードと同じです。");
                         request.getRequestDispatcher("ResetPasswordResult").forward(request, response);
                     }
                 } else {
@@ -53,6 +53,8 @@ public class ResetPasswordServlet extends HttpServlet {
             }
         } catch (ClassNotFoundException | ServletException | IOException e) {
             e.printStackTrace();
+            request.setAttribute("errorMessage", "システムエラーが発生しました。");
+            request.getRequestDispatcher("ResetPasswordResult").forward(request, response);
         }
     }
 }

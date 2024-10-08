@@ -106,4 +106,32 @@ public class MainToDoDAO {
 
         return tickets;
     }
+    
+ // ユーザー名を取得するメソッド
+    public String getUserNameByEmail(String email) throws SQLException {
+        String userName = null;
+        String sql = "SELECT user_name FROM Users WHERE email = ?";
+
+        try {
+            connection = DBConnector.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, email);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                userName = resultSet.getString("name");
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (connection != null) {
+                connection.close();
+            }
+        }
+
+        return userName;
+    }
+
 }
