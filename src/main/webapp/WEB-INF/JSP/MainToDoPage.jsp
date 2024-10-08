@@ -97,30 +97,38 @@
         }
 
      // 検索を実行する関数
-        function performSearch() {
-            var searchCriteria = $('input[name="criteria"]:checked').val();
-            var searchText = $('#searchText').val();
-            var email = $('input[name="email"]').val(); // email フィールドを取得
+		function performSearch() {
+		    var searchCriteria = $('input[name="criteria"]:checked').val();
+		    var searchText = $('#searchText').val().trim(); // 入力値を取得し、前後の空白を削除
+		    var email = $('input[name="email"]').val(); // email フィールドを取得
+		
+		    // 検索文字列が空でないか確認
+		    if (searchText === "") {
+		        alert("検索文字列を入力してください。"); // 警告メッセージを表示
+		        return false; // フォームの送信を防ぐ
+		    }
+		
+		    // 検索条件をパラメータとして送信
+		    $.ajax({
+		        url: 'SearchTicketServlet', // ServletのURLを指定
+		        type: 'POST', // POSTメソッドを使用
+		        data: {
+		            criteria: searchCriteria, // 検索条件
+		            searchText: searchText, // 検索文字列
+		            email: email // email を追加
+		        },
+		        success: function(data) {
+		            $('#ticketDetailForm').html(data); // 検索結果を右側の詳細エリアに表示
+		            $('#ticketDetailForm').show(); // 詳細エリアを表示
+		        },
+		        error: function() {
+		            alert('検索に失敗しました。');
+		        }
+		    });
+		
+		    return false; // フォームの送信を防ぐ
+		}
 
-            // 検索条件をパラメータとして送信
-            $.ajax({
-                url: 'SearchTicketServlet', // ServletのURLを指定
-                type: 'POST', // POSTメソッドを使用
-                data: {
-                    criteria: searchCriteria, // 検索条件
-                    searchText: searchText, // 検索文字列
-                    email: email // email を追加
-                },
-                success: function(data) {
-                    $('#ticketDetailForm').html(data); // 検索結果を右側の詳細エリアに表示
-                    $('#ticketDetailForm').show(); // 詳細エリアを表示
-                },
-                error: function() {
-                    alert('検索に失敗しました。');
-                }
-            });
-            return false; // フォームの送信を防ぐ
-        }
 
 
 
@@ -149,7 +157,9 @@
 			    padding: 20px;
 			    border-radius: 10px;
 			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			    text-align: left; /* これを追加 */
 			}
+
 			
 			.center-pane {
 			    display: flex;
@@ -260,35 +270,48 @@
 			    font-weight: bold; /* 太字 */
 			    margin-top: 5px; /* 上にマージンを追加 */
 			}
+	        .left-pane button {
+			    display: block; /* ボタンをブロック要素として扱う */
+			    margin: 10px 0;
+			}			
+			.left-pane form {
+			    text-align: left; /* 左寄せにする */
+			    margin: 0; /* 不要な余白を排除 */
+			}
+			
 			
     </style>
 </head>
 <body>
 	<div class="container">
-	    <div class="left-pane">
-	        <!-- 左側の検索・オプション・起票・ログアウトボタン -->
-	        <h2>操作</h2>
-	        <button id="toggleSearchButton" onclick="toggleSearchOptions()">検索オプションを表示</button>
-	        <div id="searchOptions" style="display:none;">
-	            <form onsubmit="return performSearch();">
-	                <label>検索条件:</label><br>
-	                <input type="hidden" name="email" value="${sessionScope.email}">
-	                <input type="radio" name="criteria" value="title"> タイトル
-	                <input type="radio" name="criteria" value="assigned_Person"> 担当者
-	                <input type="radio" name="criteria" value="category"> カテゴリー
-	                <br><br>
-	                <label for="searchText">検索文字列:</label>
-	                <input type="text" id="searchText" name="searchText">
-	                <input type="submit" value="検索">
-	            </form>
-	        </div>
-	        <br>
-	        <a href="ImportanceToDoServlet" class="switch-link">表示切替</a><br>
-	        <button onclick="loadTicketDetail('new')">起票</button> <!-- 新規作成ボタン -->
-	        <form action="LogoutServlet" method="post">
-	            <button type="submit">ログアウト</button>
-	        </form>
-	    </div>
+		<div class="left-pane">
+		    <h2>操作</h2>
+		    <button id="toggleSearchButton" onclick="toggleSearchOptions()">検索オプションを表示</button>
+		    
+		    <div id="searchOptions" style="display:none; margin-top: 10px;">
+		        <form onsubmit="return performSearch();">
+		            <label>検索条件:</label><br>
+		            <input type="hidden" name="email" value="${sessionScope.email}">
+		            <input type="radio" name="criteria" value="title" checked> タイトル
+		            <input type="radio" name="criteria" value="assigned_Person"> 担当者<br>
+		            <input type="radio" name="criteria" value="category"> カテゴリー
+		            <br><br>
+		            <label for="searchText">検索文字列:</label>
+		            <input type="text" id="searchText" name="searchText">
+		            <input type="submit" value="検索" style="margin-top: 10px;">
+		        </form>
+		    </div>
+		    
+		    <a href="ImportanceToDoServlet" class="switch-link" style="display: block; margin-top: 15px;">表示切替</a>
+		    
+		    <button onclick="loadTicketDetail('new')" style="margin-top: 15px;">起票</button>
+		    
+		    <form action="LogoutServlet" method="post" style="margin-top: 15px;">
+		        <button type="submit">ログアウト</button>
+		    </form>
+		</div>
+
+
 	    
 	
 	    <div class="center-pane">
