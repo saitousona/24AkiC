@@ -15,17 +15,20 @@ MainToDoPageのチケットの詳細を閉じるでlogin.jspに飛んでしま�
 フォームの必須のフィールドを確認する
 パスワード変更画面、ユーザー作成画面で戻るがない
 
+セッションに登録されてるcurrentPageの情報がオペレーションによって正しい動作をしない
+（MainToDoPageに飛ばしたいのにImportanceToDoServletに飛んでしまう）
+→多分できた
+
+検索条件のラジオボタンのデフォルト
+→checked
 
 
 
 【重大】
 
-セッションに登録されてるcurrentPageの情報がオペレーションによって正しい動作をしない
-（MainToDoPageに飛ばしたいのにImportanceToDoServletに飛んでしまう）
+
 
 【できれば】
-
-
 Filter機能の実装
 検索結果からチケットの編集ができるようにする。
 各ページのデザイン。動き
@@ -36,8 +39,7 @@ Filter機能の実装
 
 ログインページのユーザーIDフォームをEmailに変える
 →列をそろえる
-検索条件のラジオボタンのデフォルト
-→checked
+
 ログイン時Enterでログインできない
 →JavaScriptで制御しててむずそう
 
