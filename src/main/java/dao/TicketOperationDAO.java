@@ -147,4 +147,18 @@ public class TicketOperationDAO {
         System.out.println("No next ticket ID found.");
         return null; // 値が取得できなかった場合
     }
+    
+    public void deleteTicket(String ticketId) throws ClassNotFoundException {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        try {
+            conn = DBConnector.getConnection();
+            String sql = "DELETE FROM Ticket WHERE TICKET_ID = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, ticketId);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

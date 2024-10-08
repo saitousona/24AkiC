@@ -7,9 +7,9 @@
     <style>
         /* フォーム全体のスタイル */
         form {
-            width: 400px; /* フォームの幅を広げる */
-            margin: 0 auto; /* フォームを中央揃え */
+            width: 100%; /* フォームの幅を100%にして親要素にフィット */
             padding: 1em;
+            box-sizing: border-box; /* パディングを含めて幅を計算 */
         }
 
         /* ラベルとフォームフィールドの揃え */
@@ -21,7 +21,7 @@
         }
 
         input[type="text"], input[type="date"], input[type="number"], select {
-            width: calc(100% - 110px); /* フィールドの幅をラベルと合わせて調整 */
+            width: 100%; /* 各フィールドの幅を100%に設定してレイアウトを崩さない */
             padding: 0.5em;
             margin-bottom: 1em;
             box-sizing: border-box; /* パディングを含めて幅を計算 */
@@ -43,6 +43,13 @@
             display: flex;
             align-items: center;
             margin-bottom: 1em;
+        }
+
+        /* 親コンテナの右ペインのサイズを固定 */
+        .right-pane {
+            width: 100%; /* 幅を調整 */
+            max-height: 100%; /* 高さを固定しつつスクロール対応 */
+            overflow-y: auto; /* はみ出した場合にスクロール可能にする */
         }
     </style>
 </head>
@@ -95,7 +102,16 @@
             <button type="submit" name="action" value="update">修正</button>
             <button type="button" onclick="closeTicketDetail()">閉じる</button>
         </div>
+        
     </form>
+    
+    <form action="DeleteTicketServlet" method="post">
+	    <input type="hidden" name="ticketId" value="${ticket.ticketId}">
+	    <div class="button-container">
+	        <button type="submit" name="action" value="delete">削除</button>
+	    </div>
+	</form>
+    
 
     <script>
         function closeTicketDetail() {

@@ -133,7 +133,7 @@
         <style>
 			.container {
 			    display: grid;
-			    grid-template-columns: 1fr 2fr 1fr;
+			    grid-template-columns: 0.8fr 1.8fr 1.4fr; /* 左を小さくし、中央と右に余裕を持たせる */
 			    gap: 20px;
 			    padding: 20px;
 			    font-family: 'Arial', sans-serif;
@@ -192,10 +192,9 @@
 			    border-radius: 10px;
 			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 			    display: none; /* デフォルトは非表示 */
-			    height: auto; /* 高さを自動に設定 */
-			    overflow: auto; /* 内容がはみ出た場合にスクロール */
-			}
+			    height: 100%; /* 高さを画面全体にフィットさせる */
 
+			}
 			
 			button {
 			    background-color: #007bff;
@@ -209,6 +208,7 @@
 			button:hover {
 			    background-color: #0056b3;
 			}
+			
 			.ticket-card {
 			    background-color: #f5f5f5;
 			    border-radius: 10px;
@@ -232,12 +232,14 @@
 			    color: #666;
 			    font-size: 0.9em;
 			}
+			
 			.ticket-card {
 			    padding: 10px;
 			    margin: 5px;
 			    border-radius: 5px;
 			    cursor: pointer;
 			}
+			
 			/* 未進行のチケット */
 			.not-started {
 			    background-color: white; /* 未進行は白 */
@@ -249,10 +251,10 @@
 			    background-color: #d1ecf1; /* 薄い青 */
 			}
 			
+			/* 完了のチケット */
 			.completed {
 			    background-color: lightgray; /* 完了はグレー */
 			}
-
     </style>
 </head>
 <body>
