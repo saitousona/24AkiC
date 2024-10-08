@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>ToDo管理</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- CSSの読み込み -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"> <!-- CSSの読み込み -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQueryの読み込み -->
 <%
     // 現在のページURLをセッションに保存
@@ -97,29 +97,31 @@
         }
 
      // 検索を実行する関数
-		function performSearch() {
-		    var searchCriteria = $('input[name="criteria"]:checked').val();
-		    var searchText = $('#searchText').val();
-		    var email = $('input[name="email"]').val(); // email フィールドを取得
-		
-		    // 検索条件をパラメータとして送信
-		    $.ajax({
-		        url: 'SearchTicketServlet', // ServletのURLを指定
-		        type: 'POST', // POSTメソッドを使用
-		        data: {
-		            criteria: searchCriteria, // 検索条件
-		            searchText: searchText, // 検索文字列
-		            email: email // email を追加
-		        },
-		        success: function(data) {
-		            $('#searchResults').html(data); // JSPからの結果を表示
-		        },
-		        error: function() {
-		            alert('検索に失敗しました。');
-		        }
-		    });
-		    return false; // フォームの送信を防ぐ
-		}
+        function performSearch() {
+            var searchCriteria = $('input[name="criteria"]:checked').val();
+            var searchText = $('#searchText').val();
+            var email = $('input[name="email"]').val(); // email フィールドを取得
+
+            // 検索条件をパラメータとして送信
+            $.ajax({
+                url: 'SearchTicketServlet', // ServletのURLを指定
+                type: 'POST', // POSTメソッドを使用
+                data: {
+                    criteria: searchCriteria, // 検索条件
+                    searchText: searchText, // 検索文字列
+                    email: email // email を追加
+                },
+                success: function(data) {
+                    $('#ticketDetailForm').html(data); // 検索結果を右側の詳細エリアに表示
+                    $('#ticketDetailForm').show(); // 詳細エリアを表示
+                },
+                error: function() {
+                    alert('検索に失敗しました。');
+                }
+            });
+            return false; // フォームの送信を防ぐ
+        }
+
 
 
     </script>
@@ -128,76 +130,214 @@
             display: none; /* 最初は非表示 */
         }
     </style>
+        <style>
+			.container {
+			    display: grid;
+			    grid-template-columns: 1fr 2fr 1fr;
+			    gap: 20px;
+			    padding: 20px;
+			    font-family: 'Arial', sans-serif;
+			    height: 100vh; /* ビューポートの高さに合わせる */
+			}
+			
+			.left-pane, .center-pane, .right-pane {
+			    height: 100%; /* 各枠の高さを画面全体に合わせる */
+			}
+			
+			.left-pane {
+			    background-color: #f0f4f8;
+			    padding: 20px;
+			    border-radius: 10px;
+			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			}
+			
+			.center-pane {
+			    display: flex;
+			    justify-content: space-between;
+			    background-color: #fff;
+			    padding: 20px;
+			    border-radius: 10px;
+			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			}
+			
+			.ticket-column {
+			    width: 30%;
+			    text-align: left;
+			}
+			
+			.ticket-column h3 {
+			    font-size: 1.2em;
+			    color: #333;
+			    border-bottom: 2px solid #ddd;
+			    padding-bottom: 10px;
+			    margin-bottom: 10px;
+			}
+			
+			.ticket-column div {
+			    margin: 5px 0;
+			}
+			
+			.ticket-column a {
+			    color: #007bff;
+			    text-decoration: none;
+			}
+			
+			.ticket-column a:hover {
+			    text-decoration: underline;
+			}
+			
+			.right-pane {
+			    background-color: #f9f9f9;
+			    padding: 20px;
+			    border-radius: 10px;
+			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			    display: none; /* デフォルトは非表示 */
+			    height: auto; /* 高さを自動に設定 */
+			    overflow: auto; /* 内容がはみ出た場合にスクロール */
+			}
+
+			
+			button {
+			    background-color: #007bff;
+			    color: white;
+			    border: none;
+			    padding: 10px 20px;
+			    border-radius: 5px;
+			    cursor: pointer;
+			}
+			
+			button:hover {
+			    background-color: #0056b3;
+			}
+			.ticket-card {
+			    background-color: #f5f5f5;
+			    border-radius: 10px;
+			    padding: 10px;
+			    margin-bottom: 10px;
+			    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			    transition: background-color 0.3s;
+			}
+			
+			.ticket-card:hover {
+			    background-color: #e0e0e0;
+			}
+			
+			.ticket-title {
+			    font-weight: bold;
+			    font-size: 1.2em;
+			    margin-bottom: 5px;
+			}
+			
+			.ticket-deadline {
+			    color: #666;
+			    font-size: 0.9em;
+			}
+			.ticket-card {
+			    padding: 10px;
+			    margin: 5px;
+			    border-radius: 5px;
+			    cursor: pointer;
+			}
+			/* 未進行のチケット */
+			.not-started {
+			    background-color: white; /* 未進行は白 */
+			    border: 1px solid #ccc;  /* 薄いグレーのボーダー */
+			}
+			
+			/* 進行中のチケット */
+			.in-progress {
+			    background-color: #d1ecf1; /* 薄い青 */
+			}
+			
+			.completed {
+			    background-color: lightgray; /* 完了はグレー */
+			}
+
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="left-pane">
-            <h2>検索</h2>
-            <!-- ボタンにIDを追加して、テキスト切り替えを実現 -->
-            <button id="toggleSearchButton" onclick="toggleSearchOptions()">検索オプションを表示</button>
-            <div id="searchOptions" style="display:none;"> <!-- 最初は非表示にする -->
-                <form onsubmit="return performSearch();">
-                    <label>検索条件:</label><br>
-                    <input type="hidden" name="email" value="${sessionScope.email}">
-                    <input type="radio" name="criteria" value="title"> タイトル
-                    <input type="radio" name="criteria" value="assigned_Person"> 担当者
-                    <input type="radio" name="criteria" value="category"> カテゴリー
-                    <br><br>
-                    <label for="searchText">検索文字列:</label>
-                    <input type="text" id="searchText" name="searchText">
-                    <input type="submit" value="検索">
-                </form>
-            </div>
-            <br>
-            <a href="ImportanceToDoServlet">表示切替</a>
-            <br>
-            <button onclick="loadTicketDetail('new')">起票</button> <!-- 新規作成ボタン -->
-        </div>
+	<div class="container">
+	    <div class="left-pane">
+	        <!-- 左側の検索・オプション・起票・ログアウトボタン -->
+	        <h2>操作</h2>
+	        <button id="toggleSearchButton" onclick="toggleSearchOptions()">検索オプションを表示</button>
+	        <div id="searchOptions" style="display:none;">
+	            <form onsubmit="return performSearch();">
+	                <label>検索条件:</label><br>
+	                <input type="hidden" name="email" value="${sessionScope.email}">
+	                <input type="radio" name="criteria" value="title"> タイトル
+	                <input type="radio" name="criteria" value="assigned_Person"> 担当者
+	                <input type="radio" name="criteria" value="category"> カテゴリー
+	                <br><br>
+	                <label for="searchText">検索文字列:</label>
+	                <input type="text" id="searchText" name="searchText">
+	                <input type="submit" value="検索">
+	            </form>
+	        </div>
+	        <br>
+	        <a href="ImportanceToDoServlet" class="switch-link">表示切替</a><br>
+	        <button onclick="loadTicketDetail('new')">起票</button> <!-- 新規作成ボタン -->
+	        <form action="LogoutServlet" method="post">
+	            <button type="submit">ログアウト</button>
+	        </form>
+	    </div>
+	    
+	
+	    <div class="center-pane">
+	        <!-- 真ん中にチケットの一覧を進行度別に表示 -->
+			<div class="ticket-column">
+			    <h3>未進行 (0%)</h3>
+			    <c:forEach var="ticket" items="${notStartedTickets}">
+			        <div class="ticket-card ${ticket.progress == 0 ? 'not-started' : ticket.progress == 100 ? 'completed' : 'in-progress'}">
+			            <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">
+			                <div class="ticket-title">${ticket.title}</div>
+			                <div class="ticket-deadline">${ticket.deadline}</div>
+			            </a>
+			        </div>
+			    </c:forEach>
+			    <c:if test="${empty notStartedTickets}">
+			        <div>未進行のチケットはありません。</div>
+			    </c:if>
+			</div>
+			
+			<div class="ticket-column">
+			    <h3>進行中 (1% - 99%)</h3>
+			    <c:forEach var="ticket" items="${inProgressTickets}">
+			        <div class="ticket-card ${ticket.progress == 0 ? 'not-started' : ticket.progress == 100 ? 'completed' : 'in-progress'}">
+			            <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">
+			                <div class="ticket-title">${ticket.title}</div>
+			                <div class="ticket-deadline">${ticket.deadline}</div>
+			            </a>
+			        </div>
+			    </c:forEach>
+			    <c:if test="${empty inProgressTickets}">
+			        <div>進行中のチケットはありません。</div>
+			    </c:if>
+			</div>
+			
+			<div class="ticket-column">
+			    <h3>完了 (100%)</h3>
+			    <c:forEach var="ticket" items="${completedTickets}">
+			        <div class="ticket-card ${ticket.progress == 0 ? 'not-started' : ticket.progress == 100 ? 'completed' : 'in-progress'}">
+			            <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">
+			                <div class="ticket-title">${ticket.title}</div>
+			                <div class="ticket-deadline">${ticket.deadline}</div>
+			            </a>
+			        </div>
+			    </c:forEach>
+			    <c:if test="${empty completedTickets}">
+			        <div>完了したチケットはありません。</div>
+			    </c:if>
+			</div>
 
-        <div class="right-pane">
-            <h2>チケット一覧</h2>
-
-            <h3>未進行 (0%)</h3>
-            <c:forEach var="ticket" items="${notStartedTickets}">
-                <div>
-                    <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">${ticket.title}</a> - ${ticket.deadline}
-                </div>
-            </c:forEach>
-            <c:if test="${empty notStartedTickets}">
-                <div>未進行のチケットはありません。</div>
-            </c:if>
-
-            <h3>進行中 (1% - 99%)</h3>
-            <c:forEach var="ticket" items="${inProgressTickets}">
-                <div>
-                    <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">${ticket.title}</a> - ${ticket.deadline}
-                </div>
-            </c:forEach>
-            <c:if test="${empty inProgressTickets}">
-                <div>進行中のチケットはありません。</div>
-            </c:if>
-
-            <h3>完了 (100%)</h3>
-            <c:forEach var="ticket" items="${completedTickets}">
-                <div>
-                    <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">${ticket.title}</a> - ${ticket.deadline}
-                </div>
-            </c:forEach>
-            <c:if test="${empty completedTickets}">
-                <div>完了したチケットはありません。</div>
-            </c:if>
-        </div>
-        <form action="LogoutServlet" method="post">
-            <button type="submit">ログアウト</button>
-        </form>
-    </div>
-
-    <div id="ticketDetailForm" class="ticket-detail">
-        <!-- チケット詳細がここに表示される -->
-    </div>
-        <div id="searchResults">
-        <!-- 検索結果がここに表示される -->
-    </div>
-
+	    </div>
+	
+	    <div id="ticketDetailForm" class="right-pane ticket-detail">
+	        <!-- クリックしたチケットの詳細がここに表示される -->
+	    </div>
+	    <div id="searchResults">
+	        <!-- 検索結果がここに表示される -->
+	    </div>
+	</div>
 </body>
 </html>

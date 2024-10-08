@@ -34,7 +34,7 @@
     <h2>ログイン</h2>
     <form name="myform" method="post">
         <div>
-            <label for="email">ユーザーID:</label>
+            <label for="email">Email:</label>
             <input type="text" id="email" name="email">
         </div>
         <div>
@@ -56,10 +56,10 @@
 		</div>
 
         
-        <a href="HTML/ResetPasswordPage.html" class="button">パスワードリセット</a>
+        <a href="HTML/ResetPasswordPage.html" class="button switch-link">パスワードリセット</a>
         &nbsp;
         <%-- スペース　--%>
-        <a href="HTML/CreateUserPage.html" class="button">ユーザー作成</a>
+        <a href="HTML/CreateUserPage.html" class="button switch-link">ユーザー作成</a>
     </div>
     
 </body>
