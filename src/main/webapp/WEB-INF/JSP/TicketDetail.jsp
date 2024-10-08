@@ -103,12 +103,19 @@
     </form>
 </div>
     
-    <form action="DeleteTicketServlet" method="post">
+	<form action="DeleteTicketServlet" method="post" onsubmit="return confirmDelete();">
 	    <input type="hidden" name="ticketId" value="${ticket.ticketId}">
 	    <div class="button-container">
 	        <button type="submit" name="action" value="delete">削除</button>
 	    </div>
 	</form>
+
+	<script>
+	    function confirmDelete() {
+	        return confirm("本当にこのチケットを削除しますか？"); // 確認ダイアログを表示
+	    }
+	</script>
+
     
 
     <script>

@@ -7,31 +7,43 @@
 
     <title>検索結果</title>
     <style>
-/* SearchResultPage.css */
-.result-container {
-    width: 100%; /* 幅を100%に設定 */
-    padding: 1em;
-    background-color: #f9f9f9; /* 背景色を設定 */
-    border-radius: 8px;
-}
+        /* SearchResultPage.css */
+        .result-container {
+            width: 100%; /* 幅を100%に設定 */
+            padding: 1em;
+            background-color: #f9f9f9; /* 背景色を設定 */
+            border-radius: 8px;
+        }
 
-/* 結果ラベルとデータを整列させる */
-.result-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1em;
-}
+        /* 結果ラベルとデータを整列させる */
+        .result-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1em;
+        }
 
-.result-label {
-    font-weight: bold;
-    width: 100px; /* ラベルの幅を固定 */
-}
+        .result-label {
+            font-weight: bold;
+            width: 100px; /* ラベルの幅を固定 */
+        }
 
-.result-data {
-    flex-grow: 1;
-    text-align: left;
-}
+        .result-data {
+            flex-grow: 1;
+            text-align: left;
+        }
 
+        /* 戻るリンクのスタイル */
+        .switch-link {
+            display: inline-block; /* インラインブロック要素として表示 */
+            margin-top: 1em; /* 上にマージンを追加 */
+            text-align: left; /* 左寄せ */
+            color: #007BFF; /* リンク色 */
+            text-decoration: none; /* 下線を消す */
+        }
+        
+        .switch-link:hover {
+            text-decoration: underline; /* ホバー時に下線を表示 */
+        }
     </style>
 </head>
 <body>
@@ -69,15 +81,15 @@
                     <span class="result-data">${ticket.progress}</span>
                 </div>
             </c:forEach>
+
+            <%
+            // 現在のページURLをセッションに保存
+            HttpSession userSession = request.getSession();
+            String currentPage = (String) userSession.getAttribute("currentPage");
+            %>
+
+            <a href="<%= currentPage %>" class="switch-link">全件表示に戻る</a>
         </div>
     </div>
-
-    <%
-    // 現在のページURLをセッションに保存
-    HttpSession userSession = request.getSession();
-    String currentPage = (String) userSession.getAttribute("currentPage");
-    %>
-
-    <a href="<%= currentPage %>" class="switch-link">全件表示に戻る</a>
 </body>
 </html>

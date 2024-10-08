@@ -16,35 +16,52 @@
     
     <script>
         // チケット詳細を取得する関数
-        function loadTicketDetail(ticketId) {
+function loadTicketDetail(ticketId) {
             if (ticketId === 'new') {
                 // 新規作成用のフォームを表示
                 $('#ticketDetailForm').html(`
-                    <h2>新規チケット作成</h2>
-                    <button onclick="closeTicketDetail()">閉じる</button>
-                    <form id="ticketForm" action="FixOrCreateTicketServlet" method="post">
-                        <input type="hidden" name="currentPage" value="<%= request.getRequestURI() %>">
-                        <input type="hidden" name="ticketId" value="">
-                        <input type="hidden" name="email" value="${sessionScope.email}"> <!-- Emailを渡す -->
-                        <label for="title">タイトル:</label>
-                        <input type="text" id="title" name="title" value="">
-                        <label for="deadline">締め切り:</label>
-                        <input type="date" id="deadline" name="deadline" value="">
-                        <label for="assignedPerson">担当者:</label>
-                        <input type="text" id="assignedPerson" name="assignedPerson" value="">
-                        <label for="importance">重要度:</label>
-                        <select id="importance" name="importance">
-                            <option value="低">低</option>
-                            <option value="中">中</option>
-                            <option value="高">高</option>
-                        </select>
-                        <label for="category">カテゴリー:</label>
-                        <input type="text" id="category" name="category" value="">
-                        <label for="progress">進捗:</label>
-                        <input type="number" id="progress" name="progress" min="0" max="100" value="">
-                        <span id="progressError" style="color:red;"></span>
-                        <button type="submit" onclick="return validateProgress();" name="action" value="create">作成</button>
-                    </form>
+                		<div class="ticket-detail-container">
+                        <h2>新規チケット作成</h2>
+                        <form id="ticketForm" action="FixOrCreateTicketServlet" method="post">
+                            <input type="hidden" name="currentPage" value="${sessionScope.currentPage}">
+                            <input type="hidden" name="ticketId" value="">
+                            <input type="hidden" name="email" value="${sessionScope.email}"> <!-- Emailを渡す -->
+                            <div class="form-row">
+                                <label for="title">タイトル:</label>
+                                <input type="text" id="title" name="title" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="deadline">締め切り:</label>
+                                <input type="date" id="deadline" name="deadline" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="assignedPerson">担当者:</label>
+                                <input type="text" id="assignedPerson" name="assignedPerson">
+                            </div>
+                            <div class="form-row">
+                                <label for="importance">重要度:</label>
+                                <select id="importance" name="importance">
+                                    <option value="低">低</option>
+                                    <option value="中">中</option>
+                                    <option value="高">高</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <label for="category">カテゴリ:</label>
+                                <input type="text" id="category" name="category">
+                            </div>
+                            <div class="form-row">
+                                <label for="progress">進捗:</label>
+                                <input type="number" id="progress" name="progress" min="0" max="100" required>
+                                <span id="progressError" style="color:red;"></span>
+                            </div>
+
+						<div class="button-migidayo">
+                            <button class="button-container" onclick="closeTicketDetail()">閉じる</button>
+                            <button class="button-container" type="submit" onclick="return validateProgress();" name="action" value="create">作成</button>
+						<div>
+                        </form>
+                    </div>
                 `);
                 $('#ticketDetailForm').show(); // 詳細エリアを表示
             } else {
@@ -97,37 +114,37 @@
         }
 
      // 検索を実行する関数
-		function performSearch() {
-		    var searchCriteria = $('input[name="criteria"]:checked').val();
-		    var searchText = $('#searchText').val().trim(); // 入力値を取得し、前後の空白を削除
-		    var email = $('input[name="email"]').val(); // email フィールドを取得
-		
-		    // 検索文字列が空でないか確認
-		    if (searchText === "") {
-		        alert("検索文字列を入力してください。"); // 警告メッセージを表示
-		        return false; // フォームの送信を防ぐ
-		    }
-		
-		    // 検索条件をパラメータとして送信
-		    $.ajax({
-		        url: 'SearchTicketServlet', // ServletのURLを指定
-		        type: 'POST', // POSTメソッドを使用
-		        data: {
-		            criteria: searchCriteria, // 検索条件
-		            searchText: searchText, // 検索文字列
-		            email: email // email を追加
-		        },
-		        success: function(data) {
-		            $('#ticketDetailForm').html(data); // 検索結果を右側の詳細エリアに表示
-		            $('#ticketDetailForm').show(); // 詳細エリアを表示
-		        },
-		        error: function() {
-		            alert('検索に失敗しました。');
-		        }
-		    });
-		
-		    return false; // フォームの送信を防ぐ
-		}
+			function performSearch() {
+			    var searchCriteria = $('input[name="criteria"]:checked').val();
+			    var searchText = $('#searchText').val().trim(); // 入力値を取得し、前後の空白を削除
+			    var email = $('input[name="email"]').val(); // email フィールドを取得
+			
+			    // 検索文字列が空でないか確認
+			    if (searchText === "") {
+			        alert("検索文字列を入力してください。"); // 警告メッセージを表示
+			        return false; // フォームの送信を防ぐ
+			    }
+			
+			    // 検索条件をパラメータとして送信
+			    $.ajax({
+			        url: 'SearchTicketServlet', // ServletのURLを指定
+			        type: 'POST', // POSTメソッドを使用
+			        data: {
+			            criteria: searchCriteria, // 検索条件
+			            searchText: searchText, // 検索文字列
+			            email: email // email を追加
+			        },
+			        success: function(data) {
+			            $('#ticketDetailForm').html(data); // 検索結果を右側の詳細エリアに表示
+			            $('#ticketDetailForm').show(); // 詳細エリアを表示
+			        },
+			        error: function() {
+			            alert('検索に失敗しました。');
+			        }
+			    });
+			
+			    return false; // フォームの送信を防ぐ
+			}
 
 
 
@@ -146,6 +163,7 @@
 			    padding: 20px;
 			    font-family: 'Arial', sans-serif;
 			    height: 100vh; /* ビューポートの高さに合わせる */
+			    
 			}
 			
 			.left-pane, .center-pane, .right-pane {
@@ -278,7 +296,50 @@
 			    text-align: left; /* 左寄せにする */
 			    margin: 0; /* 不要な余白を排除 */
 			}
-			
+					.ticket-detail-container form {
+		    width: 100%;
+		    padding: 1em;
+		    box-sizing: border-box;
+		}
+		
+		.ticket-detail-container label {
+		    display: inline-block;
+		    width: 100px;
+		    text-align: left;
+		    margin-bottom: 0.5em;
+		}
+		
+		.ticket-detail-container input[type="text"],
+		.ticket-detail-container input[type="date"],
+		.ticket-detail-container input[type="number"],
+		.ticket-detail-container select {
+		    width: 100%;
+		    padding: 0.5em;
+		    margin-bottom: 1em;
+		    box-sizing: border-box;
+		}
+		
+		.ticket-detail-container .button-container {
+		    text-align: right;
+	
+		}
+		
+		.ticket-detail-container .form-row {
+		    display: flex;
+		    align-items: center;
+		    margin-bottom: 1em;
+		}
+		
+		.ticket-detail-container .right-pane {
+		    width: 100%;
+		    max-height: 100%;
+		    overflow-y: auto;
+		}
+		
+		.button-migidayo {
+			text-align: right;
+		}
+
 			
     </style>
 </head>
