@@ -49,7 +49,7 @@ public class TicketOperationDAO {
         }
     }
 
-    // チケットの挿入 動きません
+    // チケットの挿入
     public void insertTicket(MainToDoBean ticket) throws SQLException, ClassNotFoundException {
         String sql = "INSERT INTO Ticket (TICKET_ID, EMAIL, TITLE, DEADLINE, ASSIGNED_PERSON, IMPORTANCE, PROGRESS, CATEGORY) " +
                      "VALUES (TICKET_Sequence.NEXTVAL, ?, ?, ?, ?, ?, ?, ?)";

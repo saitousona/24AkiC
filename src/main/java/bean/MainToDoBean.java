@@ -12,6 +12,10 @@ public class MainToDoBean {
     private String category; // カテゴリー
     private String userEmail; // チケットの所有者のメールアドレス
     
+    private boolean shared; // 共有状態を表すプロパティ
+
+
+    
     public MainToDoBean() {
         // デフォルトコンストラクタ
     }
@@ -61,4 +65,13 @@ public class MainToDoBean {
 
     public String getUserEmail() { return userEmail; }
     public void setUserEmail(String userEmail) { this.userEmail = userEmail; }
+    
+    // ゲッターとセッター
+    public boolean isShared() {
+        return shared;
+    }
+
+    public void setShared(boolean shared) {
+        this.shared = shared;
+    }
 }

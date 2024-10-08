@@ -255,6 +255,12 @@
 			.completed {
 			    background-color: lightgray; /* 完了はグレー */
 			}
+			.ticket-shared {
+			    color: #28a745; /* 緑色 */
+			    font-weight: bold; /* 太字 */
+			    margin-top: 5px; /* 上にマージンを追加 */
+			}
+			
     </style>
 </head>
 <body>
@@ -290,13 +296,18 @@
 			<div class="ticket-column">
 			    <h3>未進行 (0%)</h3>
 			    <c:forEach var="ticket" items="${notStartedTickets}">
-			        <div class="ticket-card ${ticket.progress == 0 ? 'not-started' : ticket.progress == 100 ? 'completed' : 'in-progress'}">
-			            <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">
-			                <div class="ticket-title">${ticket.title}</div>
-			                <div class="ticket-deadline">${ticket.deadline}</div>
-			            </a>
-			        </div>
-			    </c:forEach>
+				    <div class="ticket-card ${ticket.progress == 0 ? 'not-started' : ticket.progress == 100 ? 'completed' : 'in-progress'}">
+				        <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">
+				            <div class="ticket-title">${ticket.title}</div>
+				            <div class="ticket-deadline">${ticket.deadline}</div>
+				            <!-- 共有状態の表示 -->
+				            <c:if test="${ticket.shared}">
+				                <div class="ticket-shared">共有中</div>
+				            </c:if>
+				        </a>
+				    </div>
+				</c:forEach>
+
 			    <c:if test="${empty notStartedTickets}">
 			        <div>未進行のチケットはありません。</div>
 			    </c:if>
@@ -304,14 +315,19 @@
 			
 			<div class="ticket-column">
 			    <h3>進行中 (1% - 99%)</h3>
-			    <c:forEach var="ticket" items="${inProgressTickets}">
-			        <div class="ticket-card ${ticket.progress == 0 ? 'not-started' : ticket.progress == 100 ? 'completed' : 'in-progress'}">
-			            <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">
-			                <div class="ticket-title">${ticket.title}</div>
-			                <div class="ticket-deadline">${ticket.deadline}</div>
-			            </a>
-			        </div>
-			    </c:forEach>
+				<c:forEach var="ticket" items="${inProgressTickets}">
+				    <div class="ticket-card ${ticket.progress == 0 ? 'not-started' : ticket.progress == 100 ? 'completed' : 'in-progress'}">
+				        <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">
+				            <div class="ticket-title">${ticket.title}</div>
+				            <div class="ticket-deadline">${ticket.deadline}</div>
+				            <!-- 共有状態の表示 -->
+				            <c:if test="${ticket.shared}">
+				                <div class="ticket-shared">共有中</div>
+				            </c:if>
+				        </a>
+				    </div>
+				</c:forEach>
+
 			    <c:if test="${empty inProgressTickets}">
 			        <div>進行中のチケットはありません。</div>
 			    </c:if>
@@ -319,14 +335,19 @@
 			
 			<div class="ticket-column">
 			    <h3>完了 (100%)</h3>
-			    <c:forEach var="ticket" items="${completedTickets}">
-			        <div class="ticket-card ${ticket.progress == 0 ? 'not-started' : ticket.progress == 100 ? 'completed' : 'in-progress'}">
-			            <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">
-			                <div class="ticket-title">${ticket.title}</div>
-			                <div class="ticket-deadline">${ticket.deadline}</div>
-			            </a>
-			        </div>
-			    </c:forEach>
+				<c:forEach var="ticket" items="${completedTickets}">
+				    <div class="ticket-card ${ticket.progress == 0 ? 'not-started' : ticket.progress == 100 ? 'completed' : 'in-progress'}">
+				        <a href="javascript:void(0);" onclick="loadTicketDetail(${ticket.ticketId})">
+				            <div class="ticket-title">${ticket.title}</div>
+				            <div class="ticket-deadline">${ticket.deadline}</div>
+				            <!-- 共有状態の表示 -->
+				            <c:if test="${ticket.shared}">
+				                <div class="ticket-shared">共有中</div>
+				            </c:if>
+				        </a>
+				    </div>
+				</c:forEach>
+
 			    <c:if test="${empty completedTickets}">
 			        <div>完了したチケットはありません。</div>
 			    </c:if>
