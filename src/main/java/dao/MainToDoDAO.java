@@ -16,14 +16,27 @@ public class MainToDoDAO {
     // ユーザーの全チケットを取得するメソッド
     public List<MainToDoBean> getTicketsByUserEmail(String email) throws SQLException {
         List<MainToDoBean> tickets = new ArrayList<>();
-        String sql = "SELECT * FROM Ticket WHERE EMAIL = ? ORDER BY DEADLINE";
+
+        // 自分が所有するか、担当者に登録されているチケットを取得
+        String sql = "SELECT * FROM Ticket WHERE EMAIL = ? OR ASSIGNED_PERSON = ? ORDER BY DEADLINE";
 
         try {
+            // DB接続を取得
             connection = DBConnector.getConnection();
+
+            // SQLクエリを準備
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+            // 1つ目のパラメータ (チケット所有者のEmail)
             preparedStatement.setString(1, email);
 
+            // 2つ目のパラメータ (担当者のEmail)
+            preparedStatement.setString(2, email);
+
+            // クエリを実行し、結果セットを取得
             ResultSet resultSet = preparedStatement.executeQuery();
+
+            // 結果セットをループしてチケットリストを構築
             while (resultSet.next()) {
                 int ticketId = resultSet.getInt("TICKET_ID");
                 String title = resultSet.getString("TITLE");
@@ -33,7 +46,16 @@ public class MainToDoDAO {
                 int progress = resultSet.getInt("PROGRESS");
                 String category = resultSet.getString("CATEGORY");
 
+                // チケット情報をBeanにセット
                 MainToDoBean ticket = new MainToDoBean(ticketId, title, deadline, assignedPerson, importance, progress, category, email);
+
+                // ASSIGNED_PERSONが一致する場合にフラグを設定
+                if (assignedPerson.equals(email)) {
+                    ticket.setShared(true); // 共有中
+                } else {
+                    ticket.setShared(false); // 非共有
+                }
+
                 tickets.add(ticket);
             }
         } catch (ClassNotFoundException e) {
@@ -42,12 +64,14 @@ public class MainToDoDAO {
             e.printStackTrace();
         } finally {
             if (connection != null) {
-                connection.close();
+                connection.close(); // DB接続を閉じる
             }
         }
 
         return tickets;
     }
+
+
 
     // 検索条件に基づいてチケットを取得するメソッド
     public List<MainToDoBean> searchTickets(String email, Integer progress, String category, String importance) throws SQLException {

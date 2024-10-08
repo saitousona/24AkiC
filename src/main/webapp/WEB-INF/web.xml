@@ -147,4 +147,12 @@
     	<servlet-name>LogoutServlet</servlet-name>
     	<url-pattern>/LogoutServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+    	<servlet-name>DeleteTicketServlet</servlet-name>
+    	<servlet-class>ticket.DeleteTicketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>DeleteTicketServlet</servlet-name>
+    	<url-pattern>/DeleteTicketServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

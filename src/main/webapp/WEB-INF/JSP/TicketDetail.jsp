@@ -6,47 +6,51 @@
     <title>チケット詳細</title>
     <style>
         /* フォーム全体のスタイル */
-        form {
-            width: 400px; /* フォームの幅を広げる */
-            margin: 0 auto; /* フォームを中央揃え */
-            padding: 1em;
-        }
+		/* TicketDetail専用のスタイル */
+		.ticket-detail-container form {
+		    width: 100%;
+		    padding: 1em;
+		    box-sizing: border-box;
+		}
+		
+		.ticket-detail-container label {
+		    display: inline-block;
+		    width: 100px;
+		    text-align: left;
+		    margin-bottom: 0.5em;
+		}
+		
+		.ticket-detail-container input[type="text"],
+		.ticket-detail-container input[type="date"],
+		.ticket-detail-container input[type="number"],
+		.ticket-detail-container select {
+		    width: 100%;
+		    padding: 0.5em;
+		    margin-bottom: 1em;
+		    box-sizing: border-box;
+		}
+		
+		.ticket-detail-container .button-container {
+		    text-align: right;
+		}
+		
+		.ticket-detail-container .form-row {
+		    display: flex;
+		    align-items: center;
+		    margin-bottom: 1em;
+		}
+		
+		.ticket-detail-container .right-pane {
+		    width: 100%;
+		    max-height: 100%;
+		    overflow-y: auto;
+		}
 
-        /* ラベルとフォームフィールドの揃え */
-        label {
-            display: inline-block;
-            width: 100px; /* ラベルの固定幅を設定して左揃えにする */
-            text-align: left;
-            margin-bottom: 0.5em;
-        }
 
-        input[type="text"], input[type="date"], input[type="number"], select {
-            width: calc(100% - 110px); /* フィールドの幅をラベルと合わせて調整 */
-            padding: 0.5em;
-            margin-bottom: 1em;
-            box-sizing: border-box; /* パディングを含めて幅を計算 */
-        }
-
-        /* ボタンのスタイル */
-        button {
-            padding: 0.5em 1.5em;
-            margin-top: 1em;
-        }
-
-        /* ボタンの右揃え */
-        .button-container {
-            text-align: right;
-        }
-
-        /* フォーム内の行を揃えるために使用 */
-        .form-row {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1em;
-        }
     </style>
 </head>
 <body>
+<div class="ticket-detail-container">
     <h2>チケット詳細</h2>
 
     <!-- チケット修正フォーム -->
@@ -81,7 +85,7 @@
         </div>
 
         <div class="form-row">
-            <label for="category">カテゴリー:</label>
+            <label for="category">カテゴリ:</label>
             <input type="text" id="category" name="category" value="${ticket.category}" required>
         </div>
 
@@ -95,7 +99,24 @@
             <button type="submit" name="action" value="update">修正</button>
             <button type="button" onclick="closeTicketDetail()">閉じる</button>
         </div>
+        
     </form>
+</div>
+    
+	<form action="DeleteTicketServlet" method="post" onsubmit="return confirmDelete();">
+	    <input type="hidden" name="ticketId" value="${ticket.ticketId}">
+	    <div class="button-container">
+	        <button type="submit" name="action" value="delete">削除</button>
+	    </div>
+	</form>
+
+	<script>
+	    function confirmDelete() {
+	        return confirm("本当にこのチケットを削除しますか？"); // 確認ダイアログを表示
+	    }
+	</script>
+
+    
 
     <script>
         function closeTicketDetail() {

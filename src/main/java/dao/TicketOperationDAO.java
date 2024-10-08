@@ -49,7 +49,7 @@ public class TicketOperationDAO {
         }
     }
 
-    // チケットの挿入 動きません
+    // チケットの挿入
     public void insertTicket(MainToDoBean ticket) throws SQLException, ClassNotFoundException {
         String sql = "INSERT INTO Ticket (TICKET_ID, EMAIL, TITLE, DEADLINE, ASSIGNED_PERSON, IMPORTANCE, PROGRESS, CATEGORY) " +
                      "VALUES (TICKET_Sequence.NEXTVAL, ?, ?, ?, ?, ?, ?, ?)";
@@ -146,5 +146,19 @@ public class TicketOperationDAO {
         }
         System.out.println("No next ticket ID found.");
         return null; // 値が取得できなかった場合
+    }
+    
+    public void deleteTicket(String ticketId) throws ClassNotFoundException {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        try {
+            conn = DBConnector.getConnection();
+            String sql = "DELETE FROM Ticket WHERE TICKET_ID = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, ticketId);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
