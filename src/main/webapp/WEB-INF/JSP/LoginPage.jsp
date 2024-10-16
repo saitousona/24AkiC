@@ -130,7 +130,7 @@ isplay: inline-block; /* ボタンのように表示 */
             }
 
             // メールアドレスの簡単なバリデーション
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const emailPattern = /^(?:[^\s@]+@.*|@[^\s@]+\.[^\s@]+)$/;
             if (!emailPattern.test(email)) {
                 document.getElementById("error").innerText = "有効なメールアドレスを入力してください";
                 return false;

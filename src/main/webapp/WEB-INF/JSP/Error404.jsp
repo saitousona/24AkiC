@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="CSS/style.css"> <!-- CSSの読み込み -->
-    <title>エラー - システムメンテナンス</title>
+    <title>ページが見つかりません - 404エラー</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,9 +44,9 @@
 <body>
     <div class="bg_pattern Polka_v2"></div>
     <div class="error-container">
-
-        <p>現在、システムに問題が発生しています。しばらくしてから再度お試しください。</p>
-        <p>もし問題が解決しない場合は、管理者にご連絡ください。</p>
+        <h1>お探しのページは見つかりませんでした</h1>
+        <p>申し訳ございませんが、指定されたページは存在しないか、削除された可能性があります。</p>
+        <p>他のページをお試しいただくか、再度URLをご確認ください。</p>
         <a href="TopPageServlet" class="btn">ホームに戻る</a> <!-- ホームに戻るボタン -->
     </div>
 </body>

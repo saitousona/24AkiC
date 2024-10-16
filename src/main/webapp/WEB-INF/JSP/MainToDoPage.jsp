@@ -244,6 +244,7 @@ function loadTicketDetail(ticketId) {
 			    margin-bottom: 10px;
 			    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 			    transition: background-color 0.3s;
+			    word-wrap: break-word; /* テキストの折り返しを有効にする */
 			}
 			
 			.ticket-card:hover {
