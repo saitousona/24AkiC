@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"> <!-- CSSの読み込み -->
+    <title>よくある質問</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #333;
+            margin-top: 30px;
+        }
+        .faq-item {
+            margin: 15px 0;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+            transition: background 0.3s;
+        }
+        .faq-item:hover {
+            background: #e9e9e9;
+        }
+        .answer {
+            display: none; /* 最初は非表示 */
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 4px solid #007BFF;
+            background: #f1f1f1;
+        }
+    </style>
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>よくある質問（FAQ）</h1>
+
+        <h2>ユーザー作成</h2>
+        <div class="faq-item" onclick="toggleAnswer(this)">Q1: Emailとは何ですか？</div>
+        <div class="answer">A1: xxxx@xx.xx.xx といった「@」を含んだフォーマットで入力してください</div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">Q2: ユーザー名とは何ですか？</div>
+        <div class="answer">A2: Emailと紐づく、利用ユーザー名を入力してください。</div>
+        
+        <div class="faq-item" onclick="toggleAnswer(this)">Q3: パスワードの要件を教えてください</div>
+        <div class="answer">A3: 記号、数字、大文字、小文字を組み合わせたものを8文字以上64文字以下のパスワードを作成して下さい。</div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">Q4: 秘密のワードとは何ですか？</div>
+        <div class="answer">A4: パスワードを忘れた際に必要になります。忘れないようなワードを入力してください。</div>
+
+        
+        <h2>パスワードリセット</h2>
+        <div class="faq-item" onclick="toggleAnswer(this)">Q5: Emailには何を入力すればよいですか？</div>
+        <div class="answer">A5: パスワードを忘れたユーザーのEmailを入力してください。</div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">Q6: 秘密のワードには何を入力すれば良いですか？</div>
+        <div class="answer">A6: ユーザーを作成した際に設定した秘密のワードを入力してください。</div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">Q7: リセット時のパスワードの要件はユーザー作成の時と同じですか？</div>
+        <div class="answer">A7: 基本的には同じですが、一つ前のパスワード、現在のパスワードは利用できないので注意してください</div>
+        
+        <h2>ToDoリスト</h2>
+        <div class="faq-item" onclick="toggleAnswer(this)">Q8: チケットを作成する際、必須となるフィールドは何ですか？</div>
+        <div class="answer">A8： タイトル、締め切り、重要度、進捗は必須のフィールドとなります。</div>
+        
+        <div class="faq-item" onclick="toggleAnswer(this)">Q9: 作成したチケットを修正したいです。どうしたらよいでしょうか？</div>
+        <div class="answer">A9： 対象となるタイトルのチケットをクリックし、右ペインに表示される、入力ウィンドウから修正し、「修正」ボタンをクリックしてください</div>
+       
+        <div class="faq-item" onclick="toggleAnswer(this)">Q10: 作成したチケットを削除したいです。どうしたらよいでしょうか？</div>
+        <div class="answer">A10： 対象となるチケットのタイトルをクリックし、右ペインに表示される「削除」ボタンから削除してください。</div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">Q11: 表示切替とは何ですか？</div>
+        <div class="answer">A11： 通常、進行度別でチケットが表示されていますが、重要度別で表示されるビューへ切り替えることができます。必要に応じてビューを切り替えて利用してください。</div>
+        
+        <div class="faq-item" onclick="toggleAnswer(this)">Q12: 「共有中」と表示されたチケットがあります。これは何でしょうか？</div>
+        <div class="answer">A12： 他ユーザーがログイン中のユーザーに割り当てたチケットになります。担当者に割り振りたいユーザーのEmailを入れ、タスクを振るイメージで利用してください</div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">Q13: 検索結果からチケットを修正することはできますか？</div>
+        <div class="answer">A13： できません。そういった仕様になります。</div>        
+    </div>
+
+</body>
+</html>

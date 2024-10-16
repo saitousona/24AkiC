@@ -27,21 +27,21 @@ h1,h2{
 
 
 .login-bottan {
-    display: inline-block; /* ボタンのように表示 */
-    background-color: #4CAF50; /* 背景色 */
+	display: inline-block; /* ボタンのように表示 */
+    background-color: #007bff; /* 背景色 */
     color: white; /* テキスト色 */
     border: none; /* ボーダーなし */
     border-radius: 5px; /* 角の丸み */
-    padding: 10px 20px; /* 内部の余白 */
+    padding: 12px 20px; /* 内部の余白 */
     cursor: pointer; /* カーソルをポインタに */
     font-size: 16px; /* フォントサイズ */
     transition: background-color 0.3s ease; /* 背景色のトランジション */
-    margin-bottom: 10px; /* リンクとの間にスペースを追加 */
+    text-align: center; /* テキストを中央揃え */
 }
 
 /* ホバー時のスタイル */
 .login-bottan:hover {
-    background-color: #45a049; /* ホバー時の背景色 */
+background-color: #0056b3; /* ホバー時の背景色 */
 }
 
 

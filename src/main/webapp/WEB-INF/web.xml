@@ -32,24 +32,41 @@
 	    <url-pattern>/LoginPage</url-pattern>
 	</servlet-mapping>
     <!-- エラーページの設定 -->
-    <!-- <error-page>
+	 <error-page>
         <error-code>404</error-code>
-        <location>/WEB-INF/JSP/ErrorPage.jsp</location>
+        <location>/WEB-INF/JSP/Error404.jsp</location>
     </error-page>
     <error-page>
-        <exception-type>java.lang.Throwable</exception-type>
-        <location>/WEB-INF/JSP/ErrorPage.jsp</location>
-    </error-page> -->
+    	<error-code>500</error-code>
+    	<location>/WEB-INF/JSP/GeneralErrorpage.jsp</location>
+    </error-page>
+    <error-page>
+    	<exception-type>java.lang.Throwable</exception-type>
+    	<location>/WEB-INF/JSP/GeneralErrorpage.jsp</location>
+    </error-page>
 
-    <!-- LoginFilter mapping (ログイン状態をチェックするフィルター) -->
-    <!-- <filter>
-        <filter-name>LoginFilter</filter-name>
-        <filter-class>filter.LoginFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>LoginFilter</filter-name>
-        <url-pattern>/24AkiC/*</url-pattern>
-    </filter-mapping> -->
+	<filter>
+	    <filter-name>LoginFilter</filter-name>
+	    <filter-class>filter.LoginFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	    <filter-name>LoginFilter</filter-name>
+	    <url-pattern>/MainToDoServlet/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+	    <filter-name>LoginFilter</filter-name>
+	    <url-pattern>/ImportanceToDoServlet/*</url-pattern> <!-- ImportanceToDoPageを保護 -->
+	</filter-mapping>
+	<filter>
+	    <filter-name>SanitizeFilter</filter-name>
+	    <filter-class>filter.SanitizeFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	    <filter-name>SanitizeFilter</filter-name>
+	    <url-pattern>/*</url-pattern> <!-- すべてのリクエストに適用 -->
+	</filter-mapping>
     
 	<servlet>
 	    <servlet-name>TopPageServlet</servlet-name>
