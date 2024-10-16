@@ -54,7 +54,15 @@
 	    <filter-name>LoginFilter</filter-name>
 	    <url-pattern>/ImportanceToDoServlet/*</url-pattern> <!-- ImportanceToDoPageを保護 -->
 	</filter-mapping>
-
+	<filter>
+	    <filter-name>SanitizeFilter</filter-name>
+	    <filter-class>filter.SanitizeFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	    <filter-name>SanitizeFilter</filter-name>
+	    <url-pattern>/*</url-pattern> <!-- すべてのリクエストに適用 -->
+	</filter-mapping>
     
 	<servlet>
 	    <servlet-name>TopPageServlet</servlet-name>
