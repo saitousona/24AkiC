@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css"> <!-- CSSの読み込み -->
+
     <title>ユーザー作成ページ</title>
     <script>
         function validatePassword() {
@@ -44,6 +46,7 @@
     </script>
 </head>
 <body>
+    <div class="bg_pattern Polka_v2"></div> 
     <h2>ユーザー作成ページ</h2>
     <form action="/24AkiC/CreateUserServlet" method="post" onsubmit="return validatePassword()">
         <label for="email">Email:</label>

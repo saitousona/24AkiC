@@ -359,6 +359,7 @@ function loadTicketDetail(ticketId) {
     </style>
 </head>
 <body>
+    <div class="bg_pattern Polka_v2"></div> 
 	<div class="container">
 		<div class="left-pane">
 		    <h2>操作</h2>

@@ -1,9 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"> <!-- CSSの読み込み -->
     <title>パスワード変更結果</title>
 </head>
 <body>
+    <div class="bg_pattern Polka_v2"></div> 
 <% String successMessage = (String) request.getAttribute("successMessage"); %>
 <% String errorMessage = (String) request.getAttribute("errorMessage"); %>
 
