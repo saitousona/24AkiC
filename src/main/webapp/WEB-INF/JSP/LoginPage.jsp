@@ -58,18 +58,20 @@ label {
 }
 
 .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 16px;
+isplay: inline-block; /* ボタンのように表示 */
+    background-color: #007bff; /* 背景色 */
+    color: white; /* テキスト色 */
+    border: none; /* ボーダーなし */
+    border-radius: 5px; /* 角の丸み */
+    padding: 12px 20px; /* 内部の余白 */
+    cursor: pointer; /* カーソルをポインタに */
+    font-size: 16px; /* フォントサイズ */
+    transition: background-color 0.3s ease; /* 背景色のトランジション */
+    text-align: center; /* テキストを中央揃え */
 }
 
 .btn:hover {
-    background-color: #45a049;
+	background-color: #0056b3;
 }
 
 .links {

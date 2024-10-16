@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../CSS/style.css"> <!-- CSSの読み込み -->
-
     <title>ユーザー作成ページ</title>
     <script>
         function validatePassword() {
@@ -44,30 +43,133 @@
             return true; // フォーム送信を許可
         }
     </script>
+    <style>
+		body {
+		    font-family: Arial, sans-serif;
+		    background-color: #f5f5f5; /* 背景色 */
+		    margin: 0;
+		    padding: 20px;
+		}
+		
+		.container {
+		    max-width: 600px;
+		    margin: auto;
+		    background-color: #fff; /* フォームの背景色 */
+		    padding: 20px;
+		    border-radius: 8px;
+		    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		h2 {
+		    text-align: center;
+		    color: #333; /* タイトル色 */
+		}
+		
+		label {
+		    display: block;
+		    margin-bottom: 5px;
+		    color: #555; /* ラベル色 */
+		}
+		
+		input[type="email"],
+		input[type="text"],
+		input[type="password"] {
+		    width: calc(100% - 20px); /* 幅を調整 */
+		    padding: 10px;
+		    margin-bottom: 15px;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		}
+		
+		input[type="email"]:focus,
+		input[type="text"]:focus,
+		input[type="password"]:focus {
+		    border-color: #007BFF; /* フォーカス時のボーダー色 */
+		    outline: none; /* フォーカス時のアウトラインを消す */
+		}
+		
+		.submit-button {
+		    width: 100%;
+		    padding: 10px;
+		    background-color: #007BFF; /* ボタンの背景色 */
+		    color: white; /* ボタンの文字色 */
+		    border: none;
+		    border-radius: 4px;
+		    cursor: pointer;
+		}
+		
+		.submit-button:hover {
+		    background-color: #0056b3; /* ホバー時の色 */
+		}
+		
+		.back-link {
+		    display: block;
+		    text-align: center;
+		    margin-top: 15px;
+		    text-decoration: none;
+		    color: #007BFF; /* リンク色 */
+		}
+		
+		.back-link:hover {
+		    text-decoration: underline; /* ホバー時の下線 */
+		}
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-row label {
+            margin-right: 10px; /* ラベルと入力フィールドの間隔 */
+            white-space: nowrap; /* 文字が折り返さない */
+            width: 120px; /* ラベルの幅 */
+        }
+
+        .submit-button {
+            margin-top: 10px; /* ボタンの上部にマージンを追加 */
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 10px; /* リンクの上部にマージンを追加 */
+        }
+    </style>
 </head>
 <body>
     <div class="bg_pattern Polka_v2"></div> 
-    <h2>ユーザー作成ページ</h2>
-    <form action="/24AkiC/CreateUserServlet" method="post" onsubmit="return validatePassword()">
-        <label for="email">Email:</label>
-        <input type="email" name="email" required><br>
+    <div class="container">
+        <h2>ユーザー作成</h2>
+        <form action="/24AkiC/CreateUserServlet" method="post" onsubmit="return validatePassword()">
+            <div class="form-row">
+                <label for="email">Emal</label>
+                <input type="email" name="email" required>
+            </div>
 
-        <label for="user_name">ユーザー名:</label>
-        <input type="text" name="user_name" required><br>
+            <div class="form-row">
+                <label for="user_name">ユーザー名</label>
+                <input type="text" name="user_name" required>
+            </div>
 
-        <label for="password">パスワード:</label>
-        <input type="password" name="password" required><br>
+            <div class="form-row">
+                <label for="password">パスワード</label>
+                <input type="password" name="password" required>
+            </div>
 
-        <label for="confirm_password">確認用パスワード:</label>
-        <input type="password" name="confirm_password" required><br>
+            <div class="form-row">
+                <label for="confirm_password">パスワード再入力</label>
+                <input type="password" name="confirm_password" required>
+            </div>
 
-        <label for="secret_word">秘密のワード:</label>
-        <input type="text" name="secret_word" required><br>
+            <div class="form-row">
+                <label for="secret_word">秘密のワード</label>
+                <input type="text" name="secret_word" required>
+            </div>
 
-        <button type="submit">作成</button>
-        <br>
+            <button type="submit" class="submit-button">作成</button>
+        </form>
         
-        <a href="/24AkiC/TopPageServlet">ログインページへ戻る</a>
-    </form>
+        <a href="/24AkiC/TopPageServlet" class="back-link">ログインページへ戻る</a>
+    </div>
 </body>
 </html>
