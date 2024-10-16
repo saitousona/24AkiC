@@ -41,15 +41,20 @@
         <location>/WEB-INF/JSP/ErrorPage.jsp</location>
     </error-page> -->
 
-    <!-- LoginFilter mapping (ログイン状態をチェックするフィルター) -->
-    <!-- <filter>
-        <filter-name>LoginFilter</filter-name>
-        <filter-class>filter.LoginFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>LoginFilter</filter-name>
-        <url-pattern>/24AkiC/*</url-pattern>
-    </filter-mapping> -->
+	<filter>
+	    <filter-name>LoginFilter</filter-name>
+	    <filter-class>filter.LoginFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	    <filter-name>LoginFilter</filter-name>
+	    <url-pattern>/MainToDoServlet/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+	    <filter-name>LoginFilter</filter-name>
+	    <url-pattern>/ImportanceToDoServlet/*</url-pattern> <!-- ImportanceToDoPageを保護 -->
+	</filter-mapping>
+
     
 	<servlet>
 	    <servlet-name>TopPageServlet</servlet-name>
