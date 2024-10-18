@@ -35,8 +35,8 @@ public class MainToDoDAO {
 
             // クエリを実行し、結果セットを取得
             ResultSet resultSet = preparedStatement.executeQuery();
-
-            // 結果セットをループしてチケットリストを構築
+            System.out.println("クエリの実行");
+            
             while (resultSet.next()) {
                 int ticketId = resultSet.getInt("TICKET_ID");
                 String title = resultSet.getString("TITLE");
@@ -45,6 +45,7 @@ public class MainToDoDAO {
                 String importance = resultSet.getString("IMPORTANCE");
                 int progress = resultSet.getInt("PROGRESS");
                 String category = resultSet.getString("CATEGORY");
+                System.out.println(ticketId + title + deadline + assignedPerson + importance + progress + category);
 
                 // チケット情報をBeanにセット
                 MainToDoBean ticket = new MainToDoBean(ticketId, title, deadline, assignedPerson, importance, progress, category, email);
@@ -55,6 +56,7 @@ public class MainToDoDAO {
                 } else {
                     ticket.setShared(false); // 非共有
                 }
+                System.out.println("共有中もみれたよ");
 
                 tickets.add(ticket);
             }
@@ -64,10 +66,13 @@ public class MainToDoDAO {
             e.printStackTrace();
         } finally {
             if (connection != null) {
+            	System.out.println("DB接続を切ります");
                 connection.close(); // DB接続を閉じる
+                System.out.println("接続を切れました");
             }
         }
-
+        
+        System.out.println("リターンします");
         return tickets;
     }
 
@@ -143,7 +148,7 @@ public class MainToDoDAO {
 
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                userName = resultSet.getString("name");
+                userName = resultSet.getString("user_name");
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -154,7 +159,7 @@ public class MainToDoDAO {
                 connection.close();
             }
         }
-
+        System.out.println("UserNameを取得できました");
         return userName;
     }
 

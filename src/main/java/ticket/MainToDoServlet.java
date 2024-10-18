@@ -19,10 +19,15 @@ public class MainToDoServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
+        response.setCharacterEncoding("UTF-8");
+    	
 
         // セッションからemailを取得
         HttpSession session = request.getSession();
         String email = (String) session.getAttribute("email");
+        System.out.println("MainToDoServletで取得" + email);
 
         if (email == null || email.isEmpty()) {
             // emailがセッションにない場合、ログインページにリダイレクト
@@ -39,9 +44,11 @@ public class MainToDoServlet extends HttpServlet {
             
             // ユーザー名をリクエストスコープに設定
             request.setAttribute("userName", userName);
+            System.out.println(userName + "を登録しました");
 
             // チケットを取得
             List<MainToDoBean> userTickets = mainToDoDAO.getTicketsByUserEmail(email);
+            System.out.println("チケットをサーブレットで取得できました");
 
             // 進捗状況ごとにチケットを分類
             List<MainToDoBean> notStartedTickets = new ArrayList<>();

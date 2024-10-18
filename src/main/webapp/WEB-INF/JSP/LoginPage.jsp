@@ -121,8 +121,8 @@
         document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("myform").addEventListener("keydown", function(event) {
                 if (event.key === "Enter") {
-                    buttonclick();  // Enterキーでログイン
-                    event.preventDefault();  // フォームのデフォルト送信を防ぐ
+                    buttonclick();
+                    event.preventDefault();
                 }
             });
         });
@@ -140,15 +140,26 @@
             let email = document.forms["myform"]["email"].value;
             let password = document.forms["myform"]["password"].value;
 
-            if (email == "" || password == "") {
+            if (email === "" || password === "") {
                 document.getElementById("error").innerText = "メールアドレスとパスワードを入力してください";
                 return false;
             }
 
             // メールアドレスの簡単なバリデーション
-            const emailPattern = /^(?:[^\s@]+@.*|@[^\s@]+\.[^\s@]+)$/;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailPattern.test(email)) {
                 document.getElementById("error").innerText = "有効なメールアドレスを入力してください";
+                return false;
+            }
+
+            // パスワードのバリデーション: 特定の記号 <>'& をチェックし、含まれている場合エラーメッセージを表示
+            if (/[<>&']/.test(password)) {
+                document.getElementById("error").innerText = "パスワードに <, >, ', & を含めることはできません";
+                return false;
+            }
+
+            if (password.length < 8) {
+                document.getElementById("error").innerText = "パスワードは8文字以上にしてください";
                 return false;
             }
 
@@ -181,7 +192,7 @@
                 String errorMessage = (String) session.getAttribute("errorMessage");
                 if (errorMessage != null) {
                     out.println(errorMessage);
-                    session.removeAttribute("errorMessage");  // 表示後、エラーメッセージを削除
+                    session.removeAttribute("errorMessage");
                 }
             %>
         </div>

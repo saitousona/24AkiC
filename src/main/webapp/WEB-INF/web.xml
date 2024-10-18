@@ -67,7 +67,7 @@
 	    <filter-name>SanitizeFilter</filter-name>
 	    <url-pattern>/*</url-pattern> <!-- すべてのリクエストに適用 -->
 	</filter-mapping>
-    
+	
 	<servlet>
 	    <servlet-name>TopPageServlet</servlet-name>
 	    <servlet-class>ticket.TopPageServlet</servlet-class>

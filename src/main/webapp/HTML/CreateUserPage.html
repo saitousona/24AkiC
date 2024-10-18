@@ -5,10 +5,40 @@
     <link rel="stylesheet" type="text/css" href="../CSS/style.css"> <!-- CSSの読み込み -->
     <title>ユーザー作成ページ</title>
     <script>
-        function validatePassword() {
-            const password = document.querySelector('input[name="password"]').value;
-            const confirmPassword = document.querySelector('input[name="confirm_password"]').value;
+        // 特殊文字が含まれているかをチェックする関数
+        function containsSpecialCharacters(input) {
+            const specialCharacterPattern = /[<>'&]/; // 特殊文字のパターン
+            return specialCharacterPattern.test(input);
+        }
+
+        function validateForm() {
+            const emailField = document.querySelector('input[name="email"]');
+            const userNameField = document.querySelector('input[name="user_name"]');
+            const passwordField = document.querySelector('input[name="password"]');
+            const confirmPasswordField = document.querySelector('input[name="confirm_password"]');
+            const secretWordField = document.querySelector('input[name="secret_word"]');
+            
+            const email = emailField.value;
+            const userName = userNameField.value;
+            const password = passwordField.value;
+            const confirmPassword = confirmPasswordField.value;
+            const secretWord = secretWordField.value;
+            
             const errorMessages = [];
+
+            // 特殊文字のチェック
+            if (containsSpecialCharacters(email)) {
+                errorMessages.push("Emailに不正な文字が含まれています。<, >, ', & は使用できません。");
+            }
+            if (containsSpecialCharacters(userName)) {
+                errorMessages.push("ユーザー名に不正な文字が含まれています。<, >, ', & は使用できません。");
+            }
+            if (containsSpecialCharacters(password)) {
+                errorMessages.push("パスワードに不正な文字が含まれています。<, >, ', & は使用できません。");
+            }
+            if (containsSpecialCharacters(secretWord)) {
+                errorMessages.push("秘密のワードに不正な文字が含まれています。<, >, ', & は使用できません。");
+            }
 
             // パスワードの長さをチェック
             if (password.length < 8 || password.length > 64) {
@@ -43,76 +73,77 @@
             return true; // フォーム送信を許可
         }
     </script>
+
     <style>
-		body {
-		    font-family: Arial, sans-serif;
-		    background-color: #f5f5f5; /* 背景色 */
-		    margin: 0;
-		    padding: 20px;
-		}
-		
-		.container {
-		    max-width: 600px;
-		    margin: auto;
-		    background-color: #fff; /* フォームの背景色 */
-		    padding: 20px;
-		    border-radius: 8px;
-		    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-		}
-		
-		h2 {
-		    text-align: center;
-		    color: #333; /* タイトル色 */
-		}
-		
-		label {
-		    display: block;
-		    margin-bottom: 5px;
-		    color: #555; /* ラベル色 */
-		}
-		
-		input[type="email"],
-		input[type="text"],
-		input[type="password"] {
-		    width: calc(100% - 20px); /* 幅を調整 */
-		    padding: 10px;
-		    margin-bottom: 15px;
-		    border: 1px solid #ccc;
-		    border-radius: 4px;
-		}
-		
-		input[type="email"]:focus,
-		input[type="text"]:focus,
-		input[type="password"]:focus {
-		    border-color: #007BFF; /* フォーカス時のボーダー色 */
-		    outline: none; /* フォーカス時のアウトラインを消す */
-		}
-		
-		.submit-button {
-		    width: 100%;
-		    padding: 10px;
-		    background-color: #007BFF; /* ボタンの背景色 */
-		    color: white; /* ボタンの文字色 */
-		    border: none;
-		    border-radius: 4px;
-		    cursor: pointer;
-		}
-		
-		.submit-button:hover {
-		    background-color: #0056b3; /* ホバー時の色 */
-		}
-		
-		.back-link {
-		    display: block;
-		    text-align: center;
-		    margin-top: 15px;
-		    text-decoration: none;
-		    color: #007BFF; /* リンク色 */
-		}
-		
-		.back-link:hover {
-		    text-decoration: underline; /* ホバー時の下線 */
-		}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* 背景色 */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff; /* フォームの背景色 */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333; /* タイトル色 */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555; /* ラベル色 */
+        }
+
+        input[type="email"],
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px); /* 幅を調整 */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="email"]:focus,
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #007BFF; /* フォーカス時のボーダー色 */
+            outline: none; /* フォーカス時のアウトラインを消す */
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF; /* ボタンの背景色 */
+            color: white; /* ボタンの文字色 */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3; /* ホバー時の色 */
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #007BFF; /* リンク色 */
+        }
+
+        .back-link:hover {
+            text-decoration: underline; /* ホバー時の下線 */
+        }
 
         .form-row {
             display: flex;
@@ -134,13 +165,21 @@
             display: inline-block;
             margin-top: 10px; /* リンクの上部にマージンを追加 */
         }
+
+        /* エラーメッセージのスタイル */
+        .error {
+            color: red;
+            margin-bottom: 15px;
+            display: none; /* デフォルトでは非表示 */
+        }
     </style>
 </head>
 <body>
     <div class="bg_pattern Polka_v2"></div> 
     <div class="container">
         <h2>ユーザー作成</h2>
-        <form action="/24AkiC/CreateUserServlet" method="post" onsubmit="return validatePassword()">
+        <div id="error-messages" class="error"></div> <!-- エラーメッセージ表示領域 -->
+        <form action="/24AkiC/CreateUserServlet" method="post" onsubmit="return validateForm()">
             <div class="form-row">
                 <label for="email">Email</label>
                 <input type="email" name="email" required>
